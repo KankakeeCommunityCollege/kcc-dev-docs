@@ -53,7 +53,7 @@ Documentation for the Jekyll/Gulp template used to build KCC's new websites.  Vi
     - [before_install](https://github.com/wdzajicek/kcc-dev-docs#before_install)
     - [install](https://github.com/wdzajicek/kcc-dev-docs#install)
     - [Branches](https://github.com/wdzajicek/kcc-dev-docs#branches)
-    - [Notifications](https://github.com/wdzajicek/kcc-dev-docs#notifications)
+    - [Notifications](https://github.com/wdzajicek/kcc-dev-docs#notification-settings-with-encrypted-emails)
     - [before_script](https://github.com/wdzajicek/kcc-dev-docs#before_script)
     - [script](https://github.com/wdzajicek/kcc-dev-docs#script)
     - [after_success](https://github.com/wdzajicek/kcc-dev-docs#after_succes)
@@ -63,6 +63,8 @@ Documentation for the Jekyll/Gulp template used to build KCC's new websites.  Vi
   - [Encrypting and Calling Environment Variables](https://github.com/wdzajicek/kcc-dev-docs#encrypting-and-calling-environment-variables)
 
 ## Requirements
+
+<span style="float: right; position: relative; top: -4rem;"><a href="https://github.com/wdzajicek/kcc-dev-docs#contents">Contents</a></span>
 
 Prerequisites to run site builds on a local machine.
 
@@ -116,10 +118,12 @@ Install in the following order:
 		$ npm install gulp-cli -g
 
 <br>
-
+<hr>
 <br>
 
 ### Windows PC
+
+<span style="float: right; position: relative; top: -4rem;"><a href="https://github.com/wdzajicek/kcc-dev-docs#contents">Contents</a></span>
 
 Prerequisites: Windows 10 PC running newest Windows Build Version<br>
 Install in the following order:
@@ -189,7 +193,13 @@ Install in the following order:
 
 		$ npm install gulp-cli -g
 
+<br>
+<hr>
+<br>
+
 ## Local Installation
+
+<span style="float: right; position: relative; top: -4.5rem;"><a href="https://github.com/wdzajicek/kcc-dev-docs#contents">Contents</a></span>
 
 To install the project on your local machine:
 
@@ -214,7 +224,13 @@ To install the project on your local machine:
 >		 $ bundle install
 >		 $ git remote remove origin
 
+<br>
+<hr>
+<br>
+
 ## Development
+
+<span style="float: right; position: relative; top: -4.5rem;"><a href="https://github.com/wdzajicek/kcc-dev-docs#contents">Contents</a></span>
 
 For development of sites run the default gulp task:
 
@@ -242,7 +258,13 @@ Starts Browsersync for injecting changes into browser during development (live p
 
 Watch the project files for changes to be injected into the browser via Browsersync
 
+<br>
+<hr>
+<br>
+
 ## Production
+
+<span style="float: right; position: relative; top: -4.5rem;"><a href="https://github.com/wdzajicek/kcc-dev-docs#contents">Contents</a></span>
 
 > Production build minifies CSS and JavaScript and compresses image files.
 >
@@ -256,8 +278,13 @@ Watch the project files for changes to be injected into the browser via Browsers
 
 See the comments within gulpfile.js and gulpconfig.yml for detailed explanation of what happens on running `$ gulp` or `$ gulp --production`
 
+<br>
+<hr>
+<br>
 
 ## Travis CI
+
+<span style="float: right; position: relative; top: -4.5rem;"><a href="https://github.com/wdzajicek/kcc-dev-docs#contents">Contents</a></span>
 
 ### Travis Configuration File (.travis.yml)
 
@@ -302,7 +329,7 @@ With CloudCannon's publishing workflow, the publish branch is the only one  that
 
 #### Notification settings with encrypted emails
 
-##### See Encrypting Notification Emails
+##### See [Encrypting Notification Emails](https://github.com/wdzajicek/kcc-dev-docs#encrypting-and-calling-environment-variables)
 
     notifications:
     email:
@@ -345,7 +372,7 @@ deploy.sh also issues a 15 second delay via `$ sleep 15` between the cleanFTP an
 
 #### Global Environment Variables
 
-##### See Encrypting and Calling Environment Variables.
+##### See [Encrypting and Calling Environment Variables](https://github.com/wdzajicek/kcc-dev-docs#encrypting-and-calling-environment-variables).
 
     env:
     global:
@@ -354,10 +381,12 @@ deploy.sh also issues a 15 second delay via `$ sleep 15` between the cleanFTP an
     - secure: ldvzd3QRFAcq/dGFwJHG+EUbmTM88HV3Ou7GHkS5rINCCZz1GXGMHJ2Il9SvpMIorEyy//p7qieaFG+3r+L1DpthLQBKEY5GEPlAgKjeduDQ1wjbWjXJ1llc0B39tZmMXu9xNRoLMjLqtvAl/IgUhCCnl4vvCrMJFtXzzA73HNz9XzFRhhaUF+UXPmGGrj+ABX9C4/ODUsZdFLox0kMiR/wjqkf4TDhLPszQuP49H9OQBqdfc9/7QCnLPYt77gPcpo6FLphdnyufCzdNrectGnU2HM7lStVGtP81EjkR04XjKF+XvBbWuk689kTBPNC1f3R1FcRFds7xXnKlAoTxrFO7Zd47K9GxiAUtG2xInbugHYcY/KN9lA0F35FFdbaksVPiMEYPlHMSKqPSJrviG58jGBhZiQXsAKU1psahLZKAayKeAkDAdWS2P42tNzG5817NSFT9DdWnUrGKgimuescXsuJ5E5J0Y9Dqg5tCi3CgKlU9E0pQEWqaILM0ZS5Vx1rvuZiYnTUWqefdVRrWZ3Z0c9itdu8hJOuBzLBVzzzk9eCkhdS+vVo+dMIpt1ecxX2qpRVUWJvxJ19CDgJPQL7pUb3T09MXx5r3atePwMrKcK18WGFV+PuPVYPPmxsjUXIpg4+/M2cRaRypwU+beENvXycO42+7I+nFzlxF6zA=
 
 <br>
-
+<hr>
 <br>
 
 ## Encrypting Using Travis CLI
+
+<span style="float: right; position: relative; top: -4.5rem;"><a href="https://github.com/wdzajicek/kcc-dev-docs#contents">Contents</a></span>
 
 to encrypt travis variables use the travis gem and login using Github credentials (travis logins will timeout):
 
@@ -382,7 +411,13 @@ For example, to encrypt `www.url.com|ftp_user` you would have to escape the pipe
 
     $ travis encrypt "www.url.com\\|ftp_user"
 
+<br>
+<hr>
+<br>
+
 ## Encrypting Notification emails
+
+<span style="float: right; position: relative; top: -4.5rem;"><a href="https://github.com/wdzajicek/kcc-dev-docs#contents">Contents</a></span>
 
 #### Default notification email example in .travis.yml.
 
@@ -419,10 +454,12 @@ Replace `- <recipient-1>@gmail.com` with `- secure: <long encrypted string>`:
 ##### Travis can now decrypt your email and send you notifications without making your email publicly available.
 
 <br>
-
+<hr>
 <br>
 
 ## Encrypting and Calling Environment Variables
+
+<span style="float: right; position: relative; top: -4.5rem;"><a href="https://github.com/wdzajicek/kcc-dev-docs#contents">Contents</a></span>
 
 to encrypt travis variables use the travis gem and login using Github credentials. You must be in a local git repository that travis-ci.org has access to.
 
@@ -444,3 +481,7 @@ Example in a deploy.sh file used by travis:
     $ gulp deploy --user $FTP_USER --password $FTP_PASSWORD
 
 <br>
+<hr>
+<br>
+
+<span style="float: right;"><a href="https://github.com/wdzajicek/kcc-dev-docs#contents">Contents</a></span>

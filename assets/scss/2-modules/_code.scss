@@ -1,0 +1,64 @@
+.highlight>pre {
+  background-color: #303030;
+  color: #0f0;
+  padding-top: 15px;
+  padding-right: 10px;
+  border-radius: 10px;
+}
+
+.language-shell .c {
+  color: #dadada;
+}
+
+.language-powershell .c1 {
+  color: #dadada;
+}
+
+.language-shell .nt {
+  color: #0fd2d2;
+}
+
+.language-shell .nv {
+  color:  #e1ee70;
+}
+
+.language-shell .nb {
+  color: #fcdb64;
+}
+
+.language-javascript .nx {
+  color: #fcdb64;
+}
+
+.language-javascript .s1 {
+  color:  #0fd2d2;
+}
+
+.language-powershell .nb {
+  color: #fcdb64;
+}
+
+.language-yaml .s {
+  color: #0fd2d2;
+}
+
+.language-yaml .pi {
+  color: #fcdb64;
+}
+
+blockquote {
+  border-left-style: solid;
+  border-left-width: thick;
+  border-left-color: #9f9f9f;
+  padding: 10px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+}
+
+.highlighter-rouge {
+  background-color: #cbcbcb;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 3px;
+  color: black;
+}

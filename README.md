@@ -26,6 +26,8 @@ Documentation for the Jekyll/Gulp template used to build KCC's new websites.  Vi
     - [Gulp](https://github.com/wdzajicek/kcc-dev-docs#mac-gulp)
   - [Windows PC](https://github.com/wdzajicek/kcc-dev-docs#windows-pc):
     - [Enable "Windows Subsystem for Linux"](https://github.com/wdzajicek/kcc-dev-docs#linux)
+    - [Install Ubuntu in the Microsoft Store](https://github.com/wdzajicek/kcc-dev-docs#install-ubuntu-in-the-microsoft-store)
+    - [Git SCM](https://github.com/wdzajicek/kcc-dev-docs#git-scm)
     - [RVM](https://github.com/wdzajicek/kcc-dev-docs#win-rvm):
       - [Installation](https://github.com/wdzajicek/kcc-dev-docs#win-rvm)
       - [Install ruby-2.5.0](https://github.com/wdzajicek/kcc-dev-docs#win-rvm)
@@ -68,11 +70,7 @@ Prerequisites to run site builds on a local machine.
 Prerequisites: Latest Xcode for your OS<br>
 Install in the following order:
 
-<span class="mac-rvm">
-
-1. RVM using ruby-2.5.0  - <https://rvm.io/rvm/install>
-
-</span>
+##### 1. RVM using ruby-2.5.0  - <https://rvm.io/rvm/install>
 
 		# Install public key
 		$ gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
@@ -86,7 +84,7 @@ Install in the following order:
 		# Set ruby-2.5.0 as Default Ruby Version
 		$ rvm --default use 2.5.0
 
-2. <span id="mac-nvm">NVM using Node version 9.6.1</span> - <https://github.com/creationix/nvm>
+##### 2. NVM using Node version 9.6.1 - <https://github.com/creationix/nvm>
 
 		# Use the install script
 		$ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
@@ -99,20 +97,20 @@ Install in the following order:
 		$ nvm install 9.6.1
 		$ nvm alias default 9.6.1
 
-3. <span id="mac-npm">NPM Version 6.1.0</span>
+##### 3. NPM Version 6.1.0
 
 		$ npm i -g npm@6.1.0
 
-4. <span id="mac-jekyll">Jekyll and Bundler</span> - <https://jekyllrb.com/docs/installation/>
+##### 4. Jekyll and Bundler - <https://jekyllrb.com/docs/installation/>
 
 		$ gem install jekyll
 		$ gem install bundler
 
-5. <span id="mac-travis">Travis CLI</span> - https://docs.travis-ci.com/user/encryption-keys/#stq=&stp=0
+##### 5. Travis CLI - https://docs.travis-ci.com/user/encryption-keys/#stq=&stp=0
 
 		$ gem install travis
 
-6. <span id="mac-gulp">Gulp</span> - https://gulpjs.com/
+##### 6. Gulp - https://gulpjs.com/
 
 		$ npm install gulp-cli -g
 
@@ -125,13 +123,13 @@ Install in the following order:
 Prerequisites: Windows 10 PC running newest Windows Build Version<br>
 Install in the following order:
 
-1. <span id="linux">Install the Windows Subsystem for Linux - Run in PowerShell as Administrator:</span>
+##### 1. Install the Windows Subsystem for Linux - Run in PowerShell as Administrator:
 
 		Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
 
 		# Restart when prompted
 
-2. Install Ubuntu in the Microsoft Store
+##### 2. Install Ubuntu in the Microsoft Store
 
 	- Open Microsoft Store App
 	- Search "ubuntu"
@@ -141,12 +139,12 @@ Install in the following order:
 	- After first run test by opening and cmd.exe program as admin and running `$ bash`
 	- You should be able to call a `$ bash` shell session from any command line
 
-3. Git SCM - <https://git-scm.com/>
+##### 3. Git SCM - <https://git-scm.com/>
 
 	- Use installer at <https://git-scm.com/>
 	- Install using default settings (however, I set default text editor to nano)
 
-4. RVM using ruby-2.5.0  - <https://rvm.io/rvm/install>
+##### 4. RVM using ruby-2.5.0  - <https://rvm.io/rvm/install>
 
 		# Install public key
 		$ gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
@@ -160,7 +158,7 @@ Install in the following order:
 		# Set ruby-2.5.0 as Default Ruby Version
 		$ rvm --default use 2.5.0
 
-5. NVM using Node version 9.6.1 - <https://github.com/creationix/nvm>
+##### 5. NVM using Node version 9.6.1 - <https://github.com/creationix/nvm>
 
 		# Use the install script
 		$ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
@@ -173,20 +171,20 @@ Install in the following order:
 		$ nvm install 9.6.1
 		$ nvm alias default 9.6.1
 
-6. NPM Version 6.1.0
+##### 6. NPM Version 6.1.0
 
 		$ npm i -g npm@6.1.0
 
-7. Jekyll and Bundler - <https://jekyllrb.com/docs/installation/>
+##### 7. Jekyll and Bundler - <https://jekyllrb.com/docs/installation/>
 
 		$ gem install jekyll
 		$ gem install bundler
 
-8. Travis CLI - https://docs.travis-ci.com/user/encryption-keys/#stq=&stp=0
+##### 8. Travis CLI - https://docs.travis-ci.com/user/encryption-keys/#stq=&stp=0
 
 			$ gem install travis
 
-9. Gulp - https://gulpjs.com/
+##### 9. Gulp - https://gulpjs.com/
 
 		$ npm install gulp-cli -g
 

@@ -12,48 +12,52 @@ Documentation for the Jekyll/Gulp template used to build KCC's new websites.  Vi
 
 ## Contents:
 
-1. Requirements
-  - Mac:
-    - RVM:
-      - Installation
-      - Install ruby-2.5.0
-      - Set ruby-2.5.0 as default
-    - NVM:
-      - Installation
-      - Install Node Version 9.6.1
-    - NPM 6.1.0
-    - Jekyll
-    - Gulp
-  - Windows PC:
-    - Enable "Windows Subsystem for Linux"
-    - RVM:
-      - Installation
-      - Install ruby-2.5.0
-      - Set ruby-2.5.0 as default
-    - NVM:
-      - Installation
-      - Install Node Version 9.6.1
-    - NPM 6.1.0
-    - Jekyll
-    - Gulp
-2. Local Installation
-	- install.sh
-		- Gemfile
-		- Bundle install
-		- npm install
-3. Travis CI
-  - Travis Configuration File
-    - before_install:
-    - install:
-    - Branches
-    - Notifications
-    - before_script:
-    - script:
-    - after_success
-    - Global Environment Variables
-  - Encrypting Using Travis CLI
-  - Encrypting Notification emails
-  - Encrypting and Calling Environment Variables
+1. [Requirements](https://github.com/wdzajicek/kcc-dev-docs#requirements)
+  - [Mac](https://github.com/wdzajicek/kcc-dev-docs#mac-rvm):
+    - [RVM](https://github.com/wdzajicek/kcc-dev-docs#mac-rvm):
+      - [Installation](https://github.com/wdzajicek/kcc-dev-docs#mac-rvm)
+      - [Install ruby-2.5.0](https://github.com/wdzajicek/kcc-dev-docs#mac-rvm)
+      - [Set ruby-2.5.0 as default](https://github.com/wdzajicek/kcc-dev-docs#mac-rvm)
+    - [NVM](https://github.com/wdzajicek/kcc-dev-docs#mac-nvm):
+      - [Installation](https://github.com/wdzajicek/kcc-dev-docs#mac-rvm)
+      - [Install Node Version 9.6.1](https://github.com/wdzajicek/kcc-dev-docs#mac-rvm)
+    - [NPM 6.1.0](https://github.com/wdzajicek/kcc-dev-docs#mac-npm)
+    - [Jekyll](https://github.com/wdzajicek/kcc-dev-docs#mac-jekyll)
+    - [Gulp](https://github.com/wdzajicek/kcc-dev-docs#mac-gulp)
+  - [Windows PC](https://github.com/wdzajicek/kcc-dev-docs#windows-pc):
+    - [Enable "Windows Subsystem for Linux"](https://github.com/wdzajicek/kcc-dev-docs#linux)
+    - [RVM](https://github.com/wdzajicek/kcc-dev-docs#win-rvm):
+      - [Installation](https://github.com/wdzajicek/kcc-dev-docs#win-rvm)
+      - [Install ruby-2.5.0](https://github.com/wdzajicek/kcc-dev-docs#win-rvm)
+      - [Set ruby-2.5.0 as default](https://github.com/wdzajicek/kcc-dev-docs#win-rvm)
+    - [NVM](https://github.com/wdzajicek/kcc-dev-docs#win-nvm):
+      - [Installation](https://github.com/wdzajicek/kcc-dev-docs#win-nvm)
+      - [Install Node Version 9.6.1](https://github.com/wdzajicek/kcc-dev-docs#win-nvm)
+    - [NPM 6.1.0](https://github.com/wdzajicek/kcc-dev-docs#win-npm)
+    - [Jekyll](https://github.com/wdzajicek/kcc-dev-docs#win-jekyll)
+    - [Gulp](https://github.com/wdzajicek/kcc-dev-docs#win-gulp)
+2. [Local Installation](https://github.com/wdzajicek/kcc-dev-docs#local-installation)
+	- [install.sh](https://github.com/wdzajicek/kcc-dev-docs#local-installation)
+		- [Gemfile](https://github.com/wdzajicek/kcc-dev-docs#local-installation)
+		- [Bundle install](https://github.com/wdzajicek/kcc-dev-docs#local-installation)
+		- [npm install](https://github.com/wdzajicek/kcc-dev-docs#local-installation)
+3. [Development](https://github.com/wdzajicek/kcc-dev-docs#development)
+    - [The build](https://github.com/wdzajicek/kcc-dev-docs#development)
+    - [Browsersync](https://github.com/wdzajicek/kcc-dev-docs#development)
+    - [watch](https://github.com/wdzajicek/kcc-dev-docs#watch)
+3. [Travis CI](https://github.com/wdzajicek/kcc-dev-docs#travis-ci)
+  - [Travis Configuration File](https://github.com/wdzajicek/kcc-dev-docs#travis-configuration-file-travisyml):
+    - [before_install](https://github.com/wdzajicek/kcc-dev-docs#before_install)
+    - [install](https://github.com/wdzajicek/kcc-dev-docs#install)
+    - [Branches](https://github.com/wdzajicek/kcc-dev-docs#branches)
+    - [Notifications](https://github.com/wdzajicek/kcc-dev-docs#notifications)
+    - [before_script](https://github.com/wdzajicek/kcc-dev-docs#before_script)
+    - [script](https://github.com/wdzajicek/kcc-dev-docs#script)
+    - [after_success](https://github.com/wdzajicek/kcc-dev-docs#after_succes)
+    - [Global Environment Variables](https://github.com/wdzajicek/kcc-dev-docs#global-environment-variables)
+  - [Encrypting Using Travis CLI](https://github.com/wdzajicek/kcc-dev-docs#encrypting-using-travis-cli)
+  - [Encrypting Notification emails](https://github.com/wdzajicek/kcc-dev-docs#encrypting-notification-emails)
+  - [Encrypting and Calling Environment Variables](https://github.com/wdzajicek/kcc-dev-docs#encrypting-and-calling-environment-variables)
 
 ## Requirements
 
@@ -64,7 +68,7 @@ Prerequisites to run site builds on a local machine.
 Prerequisites: Latest Xcode for your OS<br>
 Install in the following order:
 
-1. RVM using ruby-2.5.0  - <https://rvm.io/rvm/install>
+1. <span id="mac-rvm">RVM using ruby-2.5.0</span>  - <https://rvm.io/rvm/install>
 
 		# Install public key
 		$ gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
@@ -78,7 +82,7 @@ Install in the following order:
 		# Set ruby-2.5.0 as Default Ruby Version
 		$ rvm --default use 2.5.0
 
-2. NVM using Node version 9.6.1 - <https://github.com/creationix/nvm>
+2. <span id="mac-nvm">NVM using Node version 9.6.1</span> - <https://github.com/creationix/nvm>
 
 		# Use the install script
 		$ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
@@ -91,20 +95,20 @@ Install in the following order:
 		$ nvm install 9.6.1
 		$ nvm alias default 9.6.1
 
-3. NPM Version 6.1.0
+3. <span id="mac-npm">NPM Version 6.1.0</span>
 
 		$ npm i -g npm@6.1.0
 
-4. Jekyll and Bundler - <https://jekyllrb.com/docs/installation/>
+4. <span id="mac-jekyll">Jekyll and Bundler</span> - <https://jekyllrb.com/docs/installation/>
 
 		$ gem install jekyll
 		$ gem install bundler
 
-5. Travis CLI - https://docs.travis-ci.com/user/encryption-keys/#stq=&stp=0
+5. <span id="mac-travis">Travis CLI</span> - https://docs.travis-ci.com/user/encryption-keys/#stq=&stp=0
 
 		$ gem install travis
 
-6. Gulp - https://gulpjs.com/
+6. <span id="mac-gulp">Gulp</span> - https://gulpjs.com/
 
 		$ npm install gulp-cli -g
 
@@ -117,7 +121,7 @@ Install in the following order:
 Prerequisites: Windows 10 PC running newest Windows Build Version<br>
 Install in the following order:
 
-1. Install the Windows Subsystem for Linux - Run in PowerShell as Administrator:
+1. <span id="linux">Install the Windows Subsystem for Linux - Run in PowerShell as Administrator:</span>
 
 		Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
 

@@ -14,30 +14,31 @@ Documentation for the Jekyll/Gulp template used to build KCC's new websites.  Vi
 
 1. [Requirements](https://github.com/wdzajicek/kcc-dev-docs#requirements)
   - [Mac](https://github.com/wdzajicek/kcc-dev-docs#mac):
-    - [RVM](https://github.com/wdzajicek/kcc-dev-docs#mac-rvm):
-      - [Installation](https://github.com/wdzajicek/kcc-dev-docs#mac-rvm)
-      - [Install ruby-2.5.0](https://github.com/wdzajicek/kcc-dev-docs#mac-rvm)
-      - [Set ruby-2.5.0 as default](https://github.com/wdzajicek/kcc-dev-docs#mac-rvm)
-    - [NVM](https://github.com/wdzajicek/kcc-dev-docs#mac-nvm):
-      - [Installation](https://github.com/wdzajicek/kcc-dev-docs#mac-rvm)
-      - [Install Node Version 9.6.1](https://github.com/wdzajicek/kcc-dev-docs#mac-rvm)
-    - [NPM 6.1.0](https://github.com/wdzajicek/kcc-dev-docs#mac-npm)
-    - [Jekyll](https://github.com/wdzajicek/kcc-dev-docs#mac-jekyll)
-    - [Gulp](https://github.com/wdzajicek/kcc-dev-docs#mac-gulp)
+    - [RVM](https://github.com/wdzajicek/kcc-dev-docs#1-rvm-using-ruby-250----httpsrvmiorvminstall):
+      - [Installation](https://github.com/wdzajicek/kcc-dev-docs#1-rvm-using-ruby-250----httpsrvmiorvminstall)
+      - [Install ruby-2.5.0](https://github.com/wdzajicek/kcc-dev-docs#1-rvm-using-ruby-250----httpsrvmiorvminstall)
+      - [Set ruby-2.5.0 as default](https://github.com/wdzajicek/kcc-dev-docs#1-rvm-using-ruby-250----httpsrvmiorvminstall)
+    - [NVM](https://github.com/wdzajicek/kcc-dev-docs#2-nvm-using-node-version-961---httpsgithubcomcreationixnvm):
+      - [Installation](https://github.com/wdzajicek/kcc-dev-docs#2-nvm-using-node-version-961---httpsgithubcomcreationixnvm)
+      - [Install Node Version 9.6.1](https://github.com/wdzajicek/kcc-dev-docs#2-nvm-using-node-version-961---httpsgithubcomcreationixnvm)
+    - [NPM 6.1.0](https://github.com/wdzajicek/kcc-dev-docs#3-npm-version-610)
+    - [Jekyll](https://github.com/wdzajicek/kcc-dev-docs#4-jekyll-and-bundler---httpsjekyllrbcomdocsinstallation)
+    - [Gulp](https://github.com/wdzajicek/kcc-dev-docs#6-gulp---httpsgulpjscom)
   - [Windows PC](https://github.com/wdzajicek/kcc-dev-docs#windows-pc):
-    - [Enable "Windows Subsystem for Linux"](https://github.com/wdzajicek/kcc-dev-docs#linux)
-    - [Install Ubuntu in the Microsoft Store](https://github.com/wdzajicek/kcc-dev-docs#install-ubuntu-in-the-microsoft-store)
-    - [Git SCM](https://github.com/wdzajicek/kcc-dev-docs#git-scm)
-    - [RVM](https://github.com/wdzajicek/kcc-dev-docs#win-rvm):
-      - [Installation](https://github.com/wdzajicek/kcc-dev-docs#win-rvm)
-      - [Install ruby-2.5.0](https://github.com/wdzajicek/kcc-dev-docs#win-rvm)
-      - [Set ruby-2.5.0 as default](https://github.com/wdzajicek/kcc-dev-docs#win-rvm)
-    - [NVM](https://github.com/wdzajicek/kcc-dev-docs#win-nvm):
-      - [Installation](https://github.com/wdzajicek/kcc-dev-docs#win-nvm)
-      - [Install Node Version 9.6.1](https://github.com/wdzajicek/kcc-dev-docs#win-nvm)
-    - [NPM 6.1.0](https://github.com/wdzajicek/kcc-dev-docs#win-npm)
-    - [Jekyll](https://github.com/wdzajicek/kcc-dev-docs#win-jekyll)
-    - [Gulp](https://github.com/wdzajicek/kcc-dev-docs#win-gulp)
+    - [Enable "Windows Subsystem for Linux"](https://github.com/wdzajicek/kcc-dev-docs#1-install-the-windows-subsystem-for-linux---run-in-powershell-as-administrator)
+    - [Install Ubuntu in the Microsoft Store](https://github.com/wdzajicek/kcc-dev-docs#2-install-ubuntu-in-the-microsoft-store)
+    - [Git SCM](https://github.com/wdzajicek/kcc-dev-docs#3-git-scm---httpsgit-scmcom)
+    - [RVM](https://github.com/wdzajicek/kcc-dev-docs#4-rvm-using-ruby-250----httpsrvmiorvminstall):
+      - [Installation](https://github.com/wdzajicek/kcc-dev-docs#4-rvm-using-ruby-250----httpsrvmiorvminstall)
+      - [Install ruby-2.5.0](https://github.com/wdzajicek/kcc-dev-docs#4-rvm-using-ruby-250----httpsrvmiorvminstall)
+      - [Set ruby-2.5.0 as default](https://github.com/wdzajicek/kcc-dev-docs#4-rvm-using-ruby-250----httpsrvmiorvminstall)
+    - [NVM](https://github.com/wdzajicek/kcc-dev-docs#5-nvm-using-node-version-961---httpsgithubcomcreationixnvm):
+      - [Installation](https://github.com/wdzajicek/kcc-dev-docs#5-nvm-using-node-version-961---httpsgithubcomcreationixnvm)
+      - [Install Node Version 9.6.1](https://github.com/wdzajicek/kcc-dev-docs#5-nvm-using-node-version-961---httpsgithubcomcreationixnvm)
+    - [NPM 6.1.0](https://github.com/wdzajicek/kcc-dev-docs#6-npm-version-610)
+    - [Jekyll](https://github.com/wdzajicek/kcc-dev-docs#7-jekyll-and-bundler---httpsjekyllrbcomdocsinstallation)
+    - [Travis-CLI](https://github.com/wdzajicek/kcc-dev-docs#8-travis-cli---httpsdocstravis-cicomuserencryption-keysstqstp0)
+    - [Gulp](https://github.com/wdzajicek/kcc-dev-docs#9-gulp---httpsgulpjscom)
 2. [Local Installation](https://github.com/wdzajicek/kcc-dev-docs#local-installation)
 	- [install.sh](https://github.com/wdzajicek/kcc-dev-docs#local-installation)
 		- [Gemfile](https://github.com/wdzajicek/kcc-dev-docs#local-installation)

@@ -199,7 +199,7 @@ Install in the following order:
 
 ## Local Installation
 
-<span style="float: right; position: relative; top: -4.5rem;"><a href="https://github.com/wdzajicek/kcc-dev-docs#contents">Contents</a></span>
+<a href="https://github.com/wdzajicek/kcc-dev-docs#contents" style="float: right; position: relative; top: -4.5rem;">Contents</a>
 
 To install the project on your local machine:
 
@@ -230,7 +230,7 @@ To install the project on your local machine:
 
 ## Development
 
-<span style="float: right; position: relative; top: -4.5rem;"><a href="https://github.com/wdzajicek/kcc-dev-docs#contents">Contents</a></span>
+<a href="https://github.com/wdzajicek/kcc-dev-docs#contents" style="float: right; position: relative; top: -4.5rem;">Contents</a>
 
 For development of sites run the default gulp task:
 
@@ -264,7 +264,7 @@ Watch the project files for changes to be injected into the browser via Browsers
 
 ## Production
 
-<span style="float: right; position: relative; top: -4.5rem;"><a href="https://github.com/wdzajicek/kcc-dev-docs#contents">Contents</a></span>
+<a href="https://github.com/wdzajicek/kcc-dev-docs#contents" style="float: right; position: relative; top: -4.5rem;">Contents</a>
 
 > Production build minifies CSS and JavaScript and compresses image files.
 >
@@ -284,7 +284,7 @@ See the comments within gulpfile.js and gulpconfig.yml for detailed explanation 
 
 ## Travis CI
 
-<span style="float: right; position: relative; top: -4.5rem;"><a href="https://github.com/wdzajicek/kcc-dev-docs#contents">Contents</a></span>
+<a href="https://github.com/wdzajicek/kcc-dev-docs#contents" style="float: right; position: relative; top: -4.5rem;">Contents</a>
 
 ### Travis Configuration File (.travis.yml)
 
@@ -386,7 +386,7 @@ deploy.sh also issues a 15 second delay via `$ sleep 15` between the cleanFTP an
 
 ## Encrypting Using Travis CLI
 
-<span style="float: right; position: relative; top: -4.5rem;"><a href="https://github.com/wdzajicek/kcc-dev-docs#contents">Contents</a></span>
+<a href="https://github.com/wdzajicek/kcc-dev-docs#contents" style="float: right; position: relative; top: -4.5rem;">Contents</a>
 
 to encrypt travis variables use the travis gem and login using Github credentials (travis logins will timeout):
 
@@ -417,7 +417,7 @@ For example, to encrypt `www.url.com|ftp_user` you would have to escape the pipe
 
 ## Encrypting Notification emails
 
-<span style="float: right; position: relative; top: -4.5rem;"><a href="https://github.com/wdzajicek/kcc-dev-docs#contents">Contents</a></span>
+<a href="https://github.com/wdzajicek/kcc-dev-docs#contents" style="float: right; position: relative; top: -4.5rem;">Contents</a>
 
 #### Default notification email example in .travis.yml.
 
@@ -459,7 +459,7 @@ Replace `- <recipient-1>@gmail.com` with `- secure: <long encrypted string>`:
 
 ## Encrypting and Calling Environment Variables
 
-<span style="float: right; position: relative; top: -4.5rem;"><a href="https://github.com/wdzajicek/kcc-dev-docs#contents">Contents</a></span>
+<a href="https://github.com/wdzajicek/kcc-dev-docs#contents" style="float: right; position: relative; top: -4.5rem;">Contents</a>
 
 to encrypt travis variables use the travis gem and login using Github credentials. You must be in a local git repository that travis-ci.org has access to.
 

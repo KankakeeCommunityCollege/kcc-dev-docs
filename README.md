@@ -13,7 +13,7 @@ Documentation for the Jekyll/Gulp template used to build KCC's new websites.  Vi
 ## Contents:
 
 1. [Requirements](https://github.com/wdzajicek/kcc-dev-docs#requirements)
-  - [Mac](https://github.com/wdzajicek/kcc-dev-docs#mac-rvm):
+  - [Mac](https://github.com/wdzajicek/kcc-dev-docs#mac):
     - [RVM](https://github.com/wdzajicek/kcc-dev-docs#mac-rvm):
       - [Installation](https://github.com/wdzajicek/kcc-dev-docs#mac-rvm)
       - [Install ruby-2.5.0](https://github.com/wdzajicek/kcc-dev-docs#mac-rvm)

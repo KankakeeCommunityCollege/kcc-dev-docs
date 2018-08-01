@@ -28,6 +28,4 @@ echo "Removing template’s Github remote to avoid overwriting."
 
 sleep 1
 
-git remote remove origin
-
 echo "Installation Complete!"

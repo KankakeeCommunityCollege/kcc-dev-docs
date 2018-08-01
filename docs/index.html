@@ -1,0 +1,754 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <!-- Meta -->
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>KCC - Kankakee Community College</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- YouTube API -->
+        <meta name="yt-api-k" value="AIzaSyBpxv9JNl4AX816ScNmZcqHkLncMUeiAws" />
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Bootstrap 4 Beta stylesheet CDN link -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+        <!-- Link to Google Font's "Open Sans" font -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+        <!-- Link to Google Font's "Oswald" font -->
+        <link href="https://fonts.googleapis.com/css?family=Oswald:500" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.typekit.net/mli7lsm.css">
+        <!-- Place favicon.ico in the root directory -->
+        <!-- Standard Favicon -->
+        <link rel="icon" type="image/x-icon" href="favicon.ico" />
+        <!-- Custom CSS Stylesheet -->
+        <link rel="stylesheet" href="assets/css/main.css">
+        <!-- Custom CSS Stylesheet for CloudCannon -->
+        <link rel="stylesheet" href="assets/css/content.css">
+        <!-- Uncomment to prevent IE-11 caching (for IE testing) -->
+        <!-- <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+        <META HTTP-EQUIV="Expires" CONTENT="-1"> -->
+    </head>
+    <body id="page-top">
+      
+
+  <nav id="globalNav" role="navigation" class="navbar global-nav fixed-top navbar-fixed-top">
+  <a class="clickable navbar-brand global-nav__navbar-brand" href="http://www.kcc.edu"><img src="assets/img/kcc-logo-inverse.svg" class="global-nav__kcc-logo-inverse" alt=""><img id="kccUrl" src="assets/img/kankakee-community-college-word-logo.svg" class="img-fluid kcc-logo" alt="Kankakee Community College link to home page"></a>
+  <script>
+    (function() {
+      var cx = '006320264078644364913:sy48bet-lr8';
+      var gcse = document.createElement('script');
+      gcse.type = 'text/javascript';
+      gcse.async = true;
+      gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(gcse, s);
+    })();
+  </script> <a id="searchIcon" href="#" class="global-nav__search-toggle d-lg-none"><span id="searchImg" style="background-image: url('assets/img/search.svg')" class="global-nav__search-icon" alt="Search icon"></span></a> <div id="searchCollapse" aria-hidden="true" class="global-nav__gcse-wrapper global-nav__search-collapse"><gcse:searchbox-only resultsUrl="search/"></gcse:searchbox-only></div>
+  <div class="global-nav__search--open-background"></div>
+</nav>
+
+  <nav id="mainNav" role="navigation" class="navbar navbar-expand-lg navbar-light bg-light local-nav fixed-top navbar-fixed-top">
+  <a href="" class="links__local-nav__newsroom-heading-link typography__newsroom-heading navbar-brand">
+    <h1 class="typography__newsroom-main-heading">kCC Dev Docs</h1>
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li id="home" class="nav-item active">
+        <a class="nav-link links__local-nav__nav-link--color" href="">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <!-- <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li> -->
+    </ul>
+  </div>
+</nav>
+
+  <main class="position__offset-fixed-nav">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1 id="kcc-web-development---site-template-documentation">KCC Web Development - Site Template Documentation</h1>
+<h4 id="jekyll--gulp--sass--browsersync--travis-ci----">Jekyll + Gulp + Sass + Browsersync + Travis CI + . . .</h4>
+
+<ul>
+  <li>Jekyll static site generator</li>
+  <li>Gulp.js with Modular gulp-tasks</li>
+  <li>YAML Gulp config file</li>
+  <li>Modular Sass</li>
+  <li>Browsersync for live previewing</li>
+  <li>Travis CI for continuous integration</li>
+</ul>
+
+<p>Documentation for the Jekyll/Gulp template used to build KCC’s new websites.  Visual styling of the sites are based off of design mockups.</p>
+
+<h2 id="contents">Contents:</h2>
+
+<ol>
+  <li><a href="https://github.com/wdzajicek/kcc-dev-docs#requirements">Requirements</a>
+    <ul>
+      <li><a href="https://github.com/wdzajicek/kcc-dev-docs#mac">Mac</a>:</li>
+    </ul>
+    <ul>
+      <li><a href="https://github.com/wdzajicek/kcc-dev-docs#1-rvm-using-ruby-250----httpsrvmiorvminstall">RVM</a>:
+        <ul>
+          <li><a href="https://github.com/wdzajicek/kcc-dev-docs#1-rvm-using-ruby-250----httpsrvmiorvminstall">Installation</a></li>
+          <li><a href="https://github.com/wdzajicek/kcc-dev-docs#1-rvm-using-ruby-250----httpsrvmiorvminstall">Install ruby-2.5.0</a></li>
+          <li><a href="https://github.com/wdzajicek/kcc-dev-docs#1-rvm-using-ruby-250----httpsrvmiorvminstall">Set ruby-2.5.0 as default</a></li>
+        </ul>
+      </li>
+      <li><a href="https://github.com/wdzajicek/kcc-dev-docs#2-nvm-using-node-version-961---httpsgithubcomcreationixnvm">NVM</a>:
+        <ul>
+          <li><a href="https://github.com/wdzajicek/kcc-dev-docs#2-nvm-using-node-version-961---httpsgithubcomcreationixnvm">Installation</a></li>
+          <li><a href="https://github.com/wdzajicek/kcc-dev-docs#2-nvm-using-node-version-961---httpsgithubcomcreationixnvm">Install Node Version 9.6.1</a></li>
+        </ul>
+      </li>
+      <li><a href="https://github.com/wdzajicek/kcc-dev-docs#3-npm-version-610">NPM 6.1.0</a></li>
+      <li><a href="https://github.com/wdzajicek/kcc-dev-docs#4-jekyll-and-bundler---httpsjekyllrbcomdocsinstallation">Jekyll</a></li>
+      <li><a href="https://github.com/wdzajicek/kcc-dev-docs#6-gulp---httpsgulpjscom">Gulp</a>
+      - <a href="https://github.com/wdzajicek/kcc-dev-docs#windows-pc">Windows PC</a>:</li>
+      <li><a href="https://github.com/wdzajicek/kcc-dev-docs#1-install-the-windows-subsystem-for-linux---run-in-powershell-as-administrator">Enable “Windows Subsystem for Linux”</a></li>
+      <li><a href="https://github.com/wdzajicek/kcc-dev-docs#2-install-ubuntu-in-the-microsoft-store">Install Ubuntu in the Microsoft Store</a></li>
+      <li><a href="https://github.com/wdzajicek/kcc-dev-docs#3-git-scm---httpsgit-scmcom">Git SCM</a></li>
+      <li><a href="https://github.com/wdzajicek/kcc-dev-docs#4-rvm-using-ruby-250----httpsrvmiorvminstall">RVM</a>:
+        <ul>
+          <li><a href="https://github.com/wdzajicek/kcc-dev-docs#4-rvm-using-ruby-250----httpsrvmiorvminstall">Installation</a></li>
+          <li><a href="https://github.com/wdzajicek/kcc-dev-docs#4-rvm-using-ruby-250----httpsrvmiorvminstall">Install ruby-2.5.0</a></li>
+          <li><a href="https://github.com/wdzajicek/kcc-dev-docs#4-rvm-using-ruby-250----httpsrvmiorvminstall">Set ruby-2.5.0 as default</a></li>
+        </ul>
+      </li>
+      <li><a href="https://github.com/wdzajicek/kcc-dev-docs#5-nvm-using-node-version-961---httpsgithubcomcreationixnvm">NVM</a>:
+        <ul>
+          <li><a href="https://github.com/wdzajicek/kcc-dev-docs#5-nvm-using-node-version-961---httpsgithubcomcreationixnvm">Installation</a></li>
+          <li><a href="https://github.com/wdzajicek/kcc-dev-docs#5-nvm-using-node-version-961---httpsgithubcomcreationixnvm">Install Node Version 9.6.1</a></li>
+        </ul>
+      </li>
+      <li><a href="https://github.com/wdzajicek/kcc-dev-docs#6-npm-version-610">NPM 6.1.0</a></li>
+      <li><a href="https://github.com/wdzajicek/kcc-dev-docs#7-jekyll-and-bundler---httpsjekyllrbcomdocsinstallation">Jekyll</a></li>
+      <li><a href="https://github.com/wdzajicek/kcc-dev-docs#8-travis-cli---httpsdocstravis-cicomuserencryption-keysstqstp0">Travis-CLI</a></li>
+      <li><a href="https://github.com/wdzajicek/kcc-dev-docs#9-gulp---httpsgulpjscom">Gulp</a></li>
+    </ul>
+  </li>
+  <li><a href="https://github.com/wdzajicek/kcc-dev-docs#local-installation">Local Installation</a>
+    <ul>
+      <li><a href="https://github.com/wdzajicek/kcc-dev-docs#local-installation">install.sh</a></li>
+    </ul>
+    <ul>
+      <li><a href="https://github.com/wdzajicek/kcc-dev-docs#local-installation">Gemfile</a></li>
+      <li><a href="https://github.com/wdzajicek/kcc-dev-docs#local-installation">Bundle install</a></li>
+      <li><a href="https://github.com/wdzajicek/kcc-dev-docs#local-installation">npm install</a></li>
+    </ul>
+  </li>
+  <li><a href="https://github.com/wdzajicek/kcc-dev-docs#development">Development</a>
+    <ul>
+      <li><a href="https://github.com/wdzajicek/kcc-dev-docs#development">The build</a></li>
+      <li><a href="https://github.com/wdzajicek/kcc-dev-docs#development">Browsersync</a></li>
+      <li><a href="https://github.com/wdzajicek/kcc-dev-docs#watch">watch</a></li>
+    </ul>
+  </li>
+  <li><a href="https://github.com/wdzajicek/kcc-dev-docs#travis-ci">Travis CI</a>
+    <ul>
+      <li><a href="https://github.com/wdzajicek/kcc-dev-docs#travis-configuration-file-travisyml">Travis Configuration File</a>:</li>
+    </ul>
+    <ul>
+      <li><a href="https://github.com/wdzajicek/kcc-dev-docs#before_install">before_install</a></li>
+      <li><a href="https://github.com/wdzajicek/kcc-dev-docs#install">install</a></li>
+      <li><a href="https://github.com/wdzajicek/kcc-dev-docs#branches">Branches</a></li>
+      <li><a href="https://github.com/wdzajicek/kcc-dev-docs#notification-settings-with-encrypted-emails">Notifications</a></li>
+      <li><a href="https://github.com/wdzajicek/kcc-dev-docs#before_script">before_script</a></li>
+      <li><a href="https://github.com/wdzajicek/kcc-dev-docs#script">script</a></li>
+      <li><a href="https://github.com/wdzajicek/kcc-dev-docs#after_succes">after_success</a></li>
+      <li><a href="https://github.com/wdzajicek/kcc-dev-docs#global-environment-variables">Global Environment Variables</a>
+      - <a href="https://github.com/wdzajicek/kcc-dev-docs#encrypting-using-travis-cli">Encrypting Using Travis CLI</a>
+      - <a href="https://github.com/wdzajicek/kcc-dev-docs#encrypting-notification-emails">Encrypting Notification emails</a>
+      - <a href="https://github.com/wdzajicek/kcc-dev-docs#encrypting-and-calling-environment-variables">Encrypting and Calling Environment Variables</a></li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="requirements">Requirements</h2>
+
+<p><span style="float: right; position: relative; top: -4rem;"><a href="https://github.com/wdzajicek/kcc-dev-docs#contents">Contents</a></span></p>
+
+<p>Prerequisites to run site builds on a local machine.</p>
+
+<h3 id="mac">Mac</h3>
+
+<p>Prerequisites: Latest Xcode for your OS<br />
+Install in the following order:</p>
+
+<h5 id="1-rvm-using-ruby-250----httpsrvmiorvminstall">1. RVM using ruby-2.5.0  - <a href="https://rvm.io/rvm/install">https://rvm.io/rvm/install</a></h5>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">    <span class="c"># Install public key</span>
+    <span class="nv">$ </span>gpg <span class="nt">--keyserver</span> hkp://keys.gnupg.net <span class="nt">--recv-keys</span> 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
+
+    <span class="c"># Install RVM stable with ruby</span>
+    <span class="nv">$ </span><span class="se">\c</span>url <span class="nt">-sSL</span> https://get.rvm.io | bash <span class="nt">-s</span> stable <span class="nt">--ruby</span>
+
+    <span class="c"># Install ruby-2.5.0</span>
+    <span class="nv">$ </span>rvm <span class="nb">install </span>2.5.0
+
+    <span class="c"># Set ruby-2.5.0 as Default Ruby Version</span>
+    <span class="nv">$ </span>rvm <span class="nt">--default</span> use 2.5.0
+    </code></pre></figure>
+
+<h5 id="2-nvm-using-node-version-961---httpsgithubcomcreationixnvm">2. NVM using Node version 9.6.1 - <a href="https://github.com/creationix/nvm">https://github.com/creationix/nvm</a></h5>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">    <span class="c"># Use the install script</span>
+    <span class="nv">$ </span>curl <span class="nt">-o-</span> https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+
+    <span class="c"># Close all terminal windows and test nvm</span>
+    <span class="nv">$ </span><span class="nb">command</span> <span class="nt">-v</span> nvm
+    <span class="c"># Should return 'nvm'</span>
+
+    <span class="c"># Install Node version 9.6.1 and set it as default</span>
+    <span class="nv">$ </span>nvm <span class="nb">install </span>9.6.1
+    <span class="nv">$ </span>nvm <span class="nb">alias </span>default 9.6.1
+    </code></pre></figure>
+
+<h5 id="3-npm-version-610">3. NPM Version 6.1.0</h5>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">    <span class="nv">$ </span>npm <span class="nb">install</span> <span class="nt">-g</span> npm@6.1.0
+    </code></pre></figure>
+
+<h5 id="4-jekyll-and-bundler---httpsjekyllrbcomdocsinstallation">4. Jekyll and Bundler - <a href="https://jekyllrb.com/docs/installation/">https://jekyllrb.com/docs/installation/</a></h5>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">    <span class="nv">$ </span>gem <span class="nb">install </span>jekyll
+    <span class="nv">$ </span>gem <span class="nb">install </span>bundler
+    </code></pre></figure>
+
+<h5 id="5-travis-cli---httpsdocstravis-cicomuserencryption-keysstqstp0">5. Travis CLI - https://docs.travis-ci.com/user/encryption-keys/#stq=&amp;stp=0</h5>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">    <span class="nv">$ </span>gem <span class="nb">install </span>travis
+    </code></pre></figure>
+
+<h5 id="6-gulp---httpsgulpjscom">6. Gulp - https://gulpjs.com/</h5>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">    <span class="nv">$ </span>npm <span class="nb">install </span>gulp-cli <span class="nt">-g</span>
+    </code></pre></figure>
+
+<p><br /></p>
+<hr />
+
+<p><br /></p>
+
+<h3 id="windows-pc">Windows PC</h3>
+
+<p><span style="float: right; position: relative; top: -4rem;"><a href="https://github.com/wdzajicek/kcc-dev-docs#contents">Contents</a></span></p>
+
+<p>Prerequisites: Windows 10 PC running newest Windows Build Version<br />
+Install in the following order:</p>
+
+<h5 id="1-install-the-windows-subsystem-for-linux---run-in-powershell-as-administrator">1. Install the Windows Subsystem for Linux - Run in PowerShell as Administrator:</h5>
+
+<figure class="highlight"><pre><code class="language-powershell" data-lang="powershell">    <span class="nb">Enable-WindowsOptionalFeature</span> -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+
+    <span class="c1"># Restart when prompted</span>
+    </code></pre></figure>
+
+<h5 id="2-install-ubuntu-in-the-microsoft-store">2. Install Ubuntu in the Microsoft Store</h5>
+
+<ul>
+  <li>Open Microsoft Store App</li>
+  <li>Search “ubuntu”</li>
+  <li>Click “Get” button on Ubuntu page</li>
+  <li>Run Ubuntu from Start menu after install</li>
+  <li>Follow prompts and create Unix User/Password</li>
+  <li>After first run test by opening and cmd.exe program as admin and running <code class="highlighter-rouge">$ bash</code></li>
+  <li>You should be able to call a <code class="highlighter-rouge">$ bash</code> shell session from any command line
+  -</li>
+</ul>
+
+<h5 id="3-git-scm---httpsgit-scmcom">3. Git SCM - <a href="https://git-scm.com/">https://git-scm.com/</a></h5>
+
+<ul>
+  <li>Use installer at <a href="https://git-scm.com/">https://git-scm.com/</a></li>
+  <li>Install using default settings (however, I set default text editor to nano)</li>
+</ul>
+
+<h5 id="4-rvm-using-ruby-250----httpsrvmiorvminstall">4. RVM using ruby-2.5.0  - <a href="https://rvm.io/rvm/install">https://rvm.io/rvm/install</a></h5>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">    <span class="c"># Install public key</span>
+    <span class="nv">$ </span>gpg <span class="nt">--keyserver</span> hkp://keys.gnupg.net <span class="nt">--recv-keys</span> 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
+
+    <span class="c"># Install RVM stable with ruby</span>
+    <span class="nv">$ </span><span class="se">\c</span>url <span class="nt">-sSL</span> https://get.rvm.io | bash <span class="nt">-s</span> stable <span class="nt">--ruby</span>
+
+    <span class="c"># Install ruby-2.5.0</span>
+    <span class="nv">$ </span>rvm <span class="nb">install </span>2.5.0
+
+    <span class="c"># Set ruby-2.5.0 as Default Ruby Version</span>
+    <span class="nv">$ </span>rvm <span class="nt">--default</span> use 2.5.0
+    </code></pre></figure>
+
+<h5 id="5-nvm-using-node-version-961---httpsgithubcomcreationixnvm">5. NVM using Node version 9.6.1 - <a href="https://github.com/creationix/nvm">https://github.com/creationix/nvm</a></h5>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">    <span class="c"># Use the install script</span>
+    <span class="nv">$ </span>curl <span class="nt">-o-</span> https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+
+    <span class="c"># Close all terminal windows and test nvm</span>
+    <span class="nv">$ </span><span class="nb">command</span> <span class="nt">-v</span> nvm
+    <span class="c"># Should return 'nvm'</span>
+
+    <span class="c"># Install Node version 9.6.1 and set it as default</span>
+    <span class="nv">$ </span>nvm <span class="nb">install </span>9.6.1
+    <span class="nv">$ </span>nvm <span class="nb">alias </span>default 9.6.1
+    </code></pre></figure>
+
+<h5 id="6-npm-version-610">6. NPM Version 6.1.0</h5>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">    <span class="nv">$ </span>npm i <span class="nt">-g</span> npm@6.1.0
+    </code></pre></figure>
+
+<h5 id="7-jekyll-and-bundler---httpsjekyllrbcomdocsinstallation">7. Jekyll and Bundler - <a href="https://jekyllrb.com/docs/installation/">https://jekyllrb.com/docs/installation/</a></h5>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">    <span class="nv">$ </span>gem <span class="nb">install </span>jekyll
+    <span class="nv">$ </span>gem <span class="nb">install </span>bundler
+    </code></pre></figure>
+
+<h5 id="8-travis-cli---httpsdocstravis-cicomuserencryption-keysstqstp0">8. Travis CLI - https://docs.travis-ci.com/user/encryption-keys/#stq=&amp;stp=0</h5>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">      <span class="nv">$ </span>gem <span class="nb">install </span>travis
+      </code></pre></figure>
+
+<h5 id="9-gulp---httpsgulpjscom">9. Gulp - https://gulpjs.com/</h5>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">    <span class="nv">$ </span>npm <span class="nb">install </span>gulp-cli <span class="nt">-g</span>
+    </code></pre></figure>
+
+<p><br /></p>
+<hr />
+
+<p><br /></p>
+
+<h2 id="local-installation">Local Installation</h2>
+
+<p><a href="https://github.com/wdzajicek/kcc-dev-docs#contents" style="float: right; position: relative; top: -3rem;">Contents</a></p>
+
+<p>To install the project on your local machine:</p>
+
+<ol>
+  <li>Clone the Repository:</li>
+</ol>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">    <span class="nv">$ </span>git clone https://github.com/KankakeeCommunityCollege/kcc-startup-template.git &lt;project name&gt;
+    </code></pre></figure>
+
+<ol>
+  <li>Run the “install.sh” shell script within the cloned repository:</li>
+</ol>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">    <span class="nv">$ </span><span class="nb">cd</span> &lt;project name&gt;
+    <span class="nv">$ </span>sh install.sh
+    </code></pre></figure>
+
+<blockquote>
+  <p><strong><em>What does the install.sh script do?</em></strong></p>
+  <ol>
+    <li>Create a Gemfile from Gemfile.txt</li>
+    <li>NPM install</li>
+    <li>Bundle install</li>
+    <li>
+      <p>Remove remote “origin” to prevent overwriting of the template in Github</p>
+
+      <p><strong>Running the following commands will produce the same results as running install.sh:</strong><br />
+ $ cp Gemfile.txt gemfile<br />
+ $ npm install<br />
+ $ bundle install<br />
+ $ git remote remove origin</p>
+    </li>
+  </ol>
+</blockquote>
+
+<p><br /></p>
+<hr />
+
+<p><br /></p>
+
+<h2 id="development">Development</h2>
+
+<p><a href="https://github.com/wdzajicek/kcc-dev-docs#contents" style="float: right; position: relative; top: -3rem;">Contents</a></p>
+
+<p>For development of sites run the default gulp task:</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">  <span class="nv">$ </span>gulp
+  </code></pre></figure>
+
+<blockquote>
+  <p>The default gulp task consists of 3 main parts:</p>
+
+  <ol>
+    <li>The build</li>
+    <li>Browsersync</li>
+    <li>watch</li>
+  </ol>
+</blockquote>
+
+<p><strong>1. The Build:</strong></p>
+
+<p>The “build” gulp task cleans the _site/ dir, runs the Jekyll site build, creates the sitemap, compiles the Sass and JavaScript and copies static assets like images.</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript">  <span class="nx">gulp</span><span class="p">.</span><span class="nx">task</span><span class="p">(</span><span class="s1">'build'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">done</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">sequence</span><span class="p">(</span> <span class="s1">'clean'</span><span class="p">,</span> <span class="s1">'jekyll-build'</span><span class="p">,</span> <span class="s1">'sitemap'</span><span class="p">,</span> <span class="p">[</span><span class="s1">'sass'</span><span class="p">,</span> <span class="s1">'contentSass'</span><span class="p">,</span> <span class="s1">'javascript'</span><span class="p">],</span> <span class="s1">'copy'</span><span class="p">,</span> <span class="nx">done</span><span class="p">);</span>
+  <span class="p">});</span>
+  </code></pre></figure>
+
+<p><strong>2. Browsersync</strong></p>
+
+<p>Starts Browsersync for injecting changes into browser during development (live preview)</p>
+
+<p><strong>3. watch</strong></p>
+
+<p>Watch the project files for changes to be injected into the browser via Browsersync</p>
+
+<p><br /></p>
+<hr />
+
+<p><br /></p>
+
+<h2 id="production">Production</h2>
+
+<p><a href="https://github.com/wdzajicek/kcc-dev-docs#contents" style="float: right; position: relative; top: -3rem;">Contents</a></p>
+
+<blockquote>
+  <p>Production build minifies CSS and JavaScript and compresses image files.</p>
+
+  <p>A gulp production build should be run before committing and pushing any CSS, JS, or new images to the Github repository.</p>
+
+  <p>Trying to push non-minified CSS and JS may result in merge conflicts.  If you have a merge conflict, especially on main.css or all.min.js, try running <code class="highlighter-rouge">$ gulp --production</code> before trying to push again</p>
+</blockquote>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">  <span class="nv">$ </span>gulp <span class="nt">--production</span>
+  </code></pre></figure>
+
+<h2 id="the-gulpfilejs-and-gulpconfigyml">The gulpfile.js and gulpconfig.yml</h2>
+
+<p>See the comments within gulpfile.js and gulpconfig.yml for detailed explanation of what happens on running <code class="highlighter-rouge">$ gulp</code> or <code class="highlighter-rouge">$ gulp --production</code></p>
+
+<p><br /></p>
+<hr />
+
+<p><br /></p>
+
+<h2 id="travis-ci">Travis CI</h2>
+
+<p><a href="https://github.com/wdzajicek/kcc-dev-docs#contents" style="float: right; position: relative; top: -3rem;">Contents</a></p>
+
+<h3 id="travis-configuration-file-travisyml">Travis Configuration File (.travis.yml)</h3>
+
+<p>Same ruby version as local dev environment</p>
+
+<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml">    <span class="na">language</span><span class="pi">:</span> <span class="s">ruby</span>
+    <span class="na">rvm</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">2.5.0</span>
+    <span class="na">sudo</span><span class="pi">:</span> <span class="no">false</span>
+    <span class="na">addons</span><span class="pi">:</span>
+    <span class="na">apt</span><span class="pi">:</span>
+      <span class="na">packages</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">ncftp</span>
+    </code></pre></figure>
+
+<h4 id="before_install">before_install:</h4>
+
+<p>gemfile.sh Creates the Gemfile for travis to use. Install npm v6.1.0:</p>
+
+<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml">    <span class="na">before_install</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">chmod +x _scripts/gemfile.sh</span>
+    <span class="pi">-</span> <span class="s">_scripts/gemfile.sh</span>
+    <span class="pi">-</span> <span class="s">npm i -g npm@6.1.0</span>
+    </code></pre></figure>
+
+<h4 id="install">install:</h4>
+
+<p>npm install, bundle install, jekyll gem installs:</p>
+
+<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml">    <span class="na">install</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">npm install</span>
+    <span class="pi">-</span> <span class="s">bundle install</span>
+    <span class="pi">-</span> <span class="s">gem install jekyll</span>
+    <span class="pi">-</span> <span class="s">gem install jekyll-feed</span>
+    <span class="pi">-</span> <span class="s">gem install jekyll-sitemap</span>
+    </code></pre></figure>
+
+<h4 id="defining-branches">Defining Branches</h4>
+
+<p>With CloudCannon’s publishing workflow, the publish branch is the only one  that gets built.</p>
+
+<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml">    <span class="na">branches</span><span class="pi">:</span>
+    <span class="na">only</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">publish</span>
+    </code></pre></figure>
+
+<h4 id="notification-settings-with-encrypted-emails">Notification settings with encrypted emails</h4>
+
+<h5 id="see-encrypting-notification-emails">See <a href="https://github.com/wdzajicek/kcc-dev-docs#encrypting-and-calling-environment-variables">Encrypting Notification Emails</a></h5>
+
+<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml">    <span class="na">notifications</span><span class="pi">:</span>
+    <span class="na">email</span><span class="pi">:</span>
+      <span class="na">recipients</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="na">secure</span><span class="pi">:</span> <span class="s">gK8tke5tvf+kn0QCQz8mBdEKDcxgtOKHSkS55k6GGSyGOSBh0wlWVYP0S3pgmJ9zGu6y6y0gBkwhA12t3SbhMXEPeKUnAdBJrss+MJdHk6Z3mhb9BhO/kyKxhkS+oTYrTBXndINEVa0JKrpwVcE3s9b+PWn7B59jKWrcXiZ4a7BMgfyXM+pKi+sJwRnRGBDsa2kbBz1S7slkb1P7t8xN+/JTM+vArHn0Pb0cXmfeW4/9llqTMMHkuscULDrcnkhgQuHWXi4SX9kk42dj9+ga2tI1vkfSuUg0m3BKc3N+wNkPt9NJoXXEJbkfbrOkKKJ8tbKHooi1bNbcwlI9Axmu5QTWQkwCAEtvbbroXch2zzEIg3gOuaFxbCwRjEUEkHP5jWLgIA4gH70ZRgRLEL31AkoRXXgZMjKvHV/IhonGzAz25jdRPf6uReMGnjwjyDDLTSSacI0yAwSI8No4MDMs3VuXRP9+6pbg01bwOc1DijTbpfu0zKHuOm2jSTErZdhNPDA2m673lbyt4AbqGqXWigWFAPLnB5SBNS63O7IluYu8SwS0rh6oQppsJF6RNB7EQ4VSuvYYJ2a0NZbT7QZ47hJrbkNFfBsa+vBXKYtZZ2gaBqGGkGNA7VGhob2Hd8Y0GKl0gEBRH7UgpxRhpw3IMwE/1Csn8mYxKhlEXm5wi/c=</span>
+      <span class="pi">-</span> <span class="na">secure</span><span class="pi">:</span> <span class="s">ThPSgqgVNLGilY8sUdKvEQmGuQocuoVuoRYdjaH6pojpsREXlNb5Yv8MlWLWRTY+JvhZcFAmE+B4e5lUT6PCgKoeidM94tzhuRj+wI3c88Y+HHe6P1p+hnQH5aVGNQTchxLF3Bdio412d2KLqhvO1+fWGLIsw12EuoMezGsuCfOCkR3fR2G7dn7IKiJEtwluee4eY59bPI90ucYRTJdZAHYg13JsBWo+D40hpuPYnqJNAk8uM9XQVGoYU4VWclFm1gfok3hzhIgncgxdIyuDy73f6WZ9hnvv73eo0FJUrn9CPAve+fNhOElpqtBCZlSU7Axe8NyDZZDcXAvakLqCPWmlwgu+UuwoVPaYQNyrzSIePT18tocSa4UYBtXu46kryT4g0oD6CQmZ5tcXcqGQi3K+2OmJjYvy9TeCde3YERRVX8JEudTBkNLccJaSpxr6grIP/+LIyBsnAbKFeq2yrXYCnRmA1iyD603vaed8y37uufH3WGAjZgRVN5dAo0P5feJ1EH9GuTH1YXw44yKcymYtBNX+sgm0MBZTZMCw2metm+JB6Jc3ji4qGxd3Fpe2CtcOLasPZzU0ifvUTpiqaA9/LqeHRev2i/cXxaxvXdbpRWpVzkVKfFkSFDjqQqJUZ2Z52ATD0/qJ/k20+dC2X318HPtI60AKyfUs61ydaho=</span>
+      <span class="pi">-</span> <span class="na">secure</span><span class="pi">:</span> <span class="s">IOJLMgek9M6Irp3WsTyuDTGzia29Vs0zWzqNg6kGS2oqQAwwdiVATND+2OwYt+zXieS6/0qJm5gq8gQbFohlmqDQ6utLuugvKi6B22DT5yQGzkeMCr5wNlrag11jFS1uULPhRApwCz5ThnYY33Oiaac4csCBNZ5YMpb4pIQugSBkyFob2oMMZlegL/2yXOtjhLkYJxQvJ5D2zpl+3oQFgmHo7n6XY0c0lJY2bFs9ehY2aXGiTw1WheLDiMMoraCSXxSrYskPOzp7c6ywg1CsdnZAy3IxJaCWEDCBEGmgh2Ljnlh0lTeWYIgow4L8TWOYYrQeU8IolfHRlx1hgCTKmildsyVrTmtLbuKVaUYzvYnuZmlHWF4d+OEkW1RCTmx3gb7iQUEZu28QsCHOgFRZPpI8Um+1ApXM3JcJI4r7zF+qduyLkRR6mdYHTDplhs/nttZYlsWGOkQnqIiJWmPQUeYgSuQgz+3sSnVmA8kNEcPlolH7U+299aL7yAw9z/khNLhErsAYqUI/35E3kecIZeLVFfCKFF1pTQedNCxhxu3lgHNROLu0Q7nXxgrpC2OGBoaR9dwvkdS9MW2Lnh8rK9lGeMvcRjhJsXfkhyJaPgJWa99O9vNUbLK9FHU/qlrM1cvhxd+Ch8QRat3PF3wv+sPZFEYjhb32pVCXukl7I0w=</span>
+      <span class="na">on_success</span><span class="pi">:</span> <span class="s">never</span>
+      <span class="na">on_failure</span><span class="pi">:</span> <span class="s">always</span>
+    </code></pre></figure>
+
+<h4 id="before_script">before_script:</h4>
+
+<h6 id="install-gulpjs">install Gulp.js</h6>
+
+<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml">    <span class="na">before_script</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">npm install -g gulp-cli</span>
+    </code></pre></figure>
+
+<h4 id="script">script:</h4>
+
+<h6 id="the-build-script--gulp-travis">The build script: <code class="highlighter-rouge">$ gulp travis</code></h6>
+
+<p>the “travis” gulp task creates a production build of the site (production uses asset minification i.e. images, JS, &amp; CSS minified/uglified/compressed.</p>
+
+<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml">    <span class="na">script</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">chmod +x _scripts/build.sh</span>
+    <span class="pi">-</span> <span class="s">_scripts/build.sh</span>
+    </code></pre></figure>
+
+<h4 id="after_succes">after_succes:</h4>
+
+<h6 id="deploy">Deploy!</h6>
+
+<p>deploy.sh runs two gulp tasks: cleanFTP and newerFTP. cleanFTP deletes everything from the server folder and newerFTP copies the new passing site build to the server.</p>
+
+<p>deploy.sh also issues a 15 second delay via <code class="highlighter-rouge">$ sleep 15</code> between the cleanFTP and newerFTP tasks.</p>
+
+<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml">    <span class="na">after_success</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">chmod +x _scripts/deploy.sh</span>
+    <span class="pi">-</span> <span class="s">_scripts/deploy.sh</span>
+    </code></pre></figure>
+
+<h4 id="global-environment-variables">Global Environment Variables</h4>
+
+<h5 id="see-encrypting-and-calling-environment-variables">See <a href="https://github.com/wdzajicek/kcc-dev-docs#encrypting-and-calling-environment-variables">Encrypting and Calling Environment Variables</a>.</h5>
+
+<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml">    <span class="na">env</span><span class="pi">:</span>
+    <span class="na">global</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">secure</span><span class="pi">:</span> <span class="s">UXS4WAMKaUFb/WIv0bam2q7T36hNXKTgUVeWSSISyxkU+Rvd5rDpkLNNC21N7NqNBF1DHUPhBMpwoYKjvTVbUfgsF7bBPLOTPAvz9Fyl7kJjkVTzk+usqFOxm5vYiJrogBro1BH7ZJKMmEqrzYIJtw+2KIvE826E6kxMAVyOHMeRiPXHH8fz2mNoE6D9hYgAL2pOOPFZ6VKQOHWqWSimXGEPH0M2vMp8MO5NFlu3rLJs/30LdeUM7evOOzl1iftLYqNgt9H56jlY0ztjYWOsSr6tIYfpWyKcSgSA5ZnAnP3MVDS3/ym5xOfSe7vNfDuGfbBKYBx9NKlwL6MVAFMsqJyBIz14wjvBT1cl6YHh8o+2su3gUvsn6uDIDk7m2T3WPXylN9/+jNvvzN2Cvi2QeSi/m/jZKBfrH6bL+4KAklpgRl69oek891Zfwln1Yu87bWXsHuT7nXcw+gGHg4xifbQu95RRlMYyhTnMZKC0UwTBwUK7uLsH3/GnwLh9Mzi8Hg4NLMMZIZ5kn2eIeb691Y84she/ZwNuvuHM6ThFWm+L9vT7CBkZP5oKJRRVOvgunv0uh1UpybSsdcyLnyx1mbEW/8X0q3zTvSa2euUsFHkBlfNefr4Q26b+93pS5di6ufpGRBuVrBQKHZdsjJD6FVPZg2oOI1vCgyZsWZO0DM4=</span>
+    <span class="pi">-</span> <span class="na">secure</span><span class="pi">:</span> <span class="s">J5PE3reG8l3IOyFKxqmRpVdiGwa5Uc8uo5ksJptBDB/8Bju/Y+mlbZy6ELIE+nQcFMo0WqBx59qY5h8PPG2NeLBlpkgPWiKecxiOBIHR4WwPV2EFcBvcFwM++k4YcQpB/bghZP5OzzNO1psOnoNM/V3DNgsy1V8BmsnmqpkF1Y3aQZfsIKwpITFaUFhX/9k29l5dQqS4cWJKktUjei3HNhYB6zst2K5cWxqagTbB2PjPWTIw1uQzQR4PR1XZ0gPq5R8KpI2Rey4HAucDnesgBxSSgoo3DppHGId8NdXGVh4CxIHowv6PGZtZ5sF/Q7WZcwbSMDstf+ZZ3A4jcJyReadZUsRnE+H+YPrXIS8GwJZ6c0E9s8hN+1lkEog0gzT0sskD4Psv4Yk2NuP+zrNsfxwf9hrNWlOIM2eTF+5LFr5TlwHHKvkByGxfpkePTQBYc1g02EDxzSQnx/nEqL+c0e2lMskT0adTU/lbUkqtsTD4taxAEyZbAseJ0dkIwl4oPSaLwwpMlMcSy7H4SiJzWpI+sU+XNCyg25oDKn3KjcQIzZC5jce1EtgnKY/Ww1FTPI4tPM2r0mq7TnYOI44cH91TiHlMOg/jOBRSmtlhMHcr6Scsy4LegOfAVlj67x+mEvT/GOzbheLS+QtqmU2XFELWS9KHA+N/C6XGkrqXCzE=</span>
+    <span class="pi">-</span> <span class="na">secure</span><span class="pi">:</span> <span class="s">ldvzd3QRFAcq/dGFwJHG+EUbmTM88HV3Ou7GHkS5rINCCZz1GXGMHJ2Il9SvpMIorEyy//p7qieaFG+3r+L1DpthLQBKEY5GEPlAgKjeduDQ1wjbWjXJ1llc0B39tZmMXu9xNRoLMjLqtvAl/IgUhCCnl4vvCrMJFtXzzA73HNz9XzFRhhaUF+UXPmGGrj+ABX9C4/ODUsZdFLox0kMiR/wjqkf4TDhLPszQuP49H9OQBqdfc9/7QCnLPYt77gPcpo6FLphdnyufCzdNrectGnU2HM7lStVGtP81EjkR04XjKF+XvBbWuk689kTBPNC1f3R1FcRFds7xXnKlAoTxrFO7Zd47K9GxiAUtG2xInbugHYcY/KN9lA0F35FFdbaksVPiMEYPlHMSKqPSJrviG58jGBhZiQXsAKU1psahLZKAayKeAkDAdWS2P42tNzG5817NSFT9DdWnUrGKgimuescXsuJ5E5J0Y9Dqg5tCi3CgKlU9E0pQEWqaILM0ZS5Vx1rvuZiYnTUWqefdVRrWZ3Z0c9itdu8hJOuBzLBVzzzk9eCkhdS+vVo+dMIpt1ecxX2qpRVUWJvxJ19CDgJPQL7pUb3T09MXx5r3atePwMrKcK18WGFV+PuPVYPPmxsjUXIpg4+/M2cRaRypwU+beENvXycO42+7I+nFzlxF6zA=</span>
+    </code></pre></figure>
+
+<p><br /></p>
+<hr />
+
+<p><br /></p>
+
+<h2 id="encrypting-using-travis-cli">Encrypting Using Travis CLI</h2>
+
+<p><a href="https://github.com/wdzajicek/kcc-dev-docs#contents" style="float: right; position: relative; top: -3rem;">Contents</a></p>
+
+<p>to encrypt travis variables use the travis gem and login using Github credentials (travis logins will timeout):</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">    <span class="nv">$ </span>gem <span class="nb">install </span>travis
+    <span class="nv">$ </span>travis login            // this will prompt <span class="k">for </span>Github user/password
+    </code></pre></figure>
+
+<blockquote>
+  <p><strong>Certain characters within a string to be encyrpted must be escaped:</strong><br />
+Any character that <strong><em>bash cannot parse</em></strong> without escaping must be escaped (e.g. braces, parentheses,  backslashes, and pipe symbols.)</p>
+
+  <p><strong>To escape special characters in a string precede them with two backslashes ( \\ ).</strong><br />
+You are essentially escaping the escape for any special characters.</p>
+</blockquote>
+
+<p>To encrypt the string <code class="highlighter-rouge">4!4(2&amp;^2\</code> you must escape <code class="highlighter-rouge">!</code>, <code class="highlighter-rouge">(</code>, <code class="highlighter-rouge">&amp;</code>, <code class="highlighter-rouge">^</code>, and <code class="highlighter-rouge">\</code></p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">    <span class="nv">$ </span>travis encrypt <span class="s2">"4</span><span class="se">\\</span><span class="s2">!4</span><span class="se">\\</span><span class="s2">(2</span><span class="se">\\</span><span class="s2">&amp;</span><span class="se">\\</span><span class="s2">^2</span><span class="se">\\\\</span><span class="s2">"</span>
+    </code></pre></figure>
+
+<blockquote>
+  <p>That way, when you enter the command <code class="highlighter-rouge">$ travis encrypt "4\\!4\\(2\\&amp;\\^2\\\\"</code> travis is actually encrypting the string <code class="highlighter-rouge">4\!4\(2\&amp;\^2\\</code>.</p>
+
+  <p><strong>This is needed so that, when travis decrypts this string and uses it, all the special characters within the string have already been escaped.</strong></p>
+</blockquote>
+
+<table>
+  <tbody>
+    <tr>
+      <td>For example, to encrypt <code class="highlighter-rouge">www.url.com|ftp_user</code> you would have to escape the pipe (</td>
+      <td>) symbol</td>
+    </tr>
+  </tbody>
+</table>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">    <span class="nv">$ </span>travis encrypt <span class="s2">"www.url.com</span><span class="se">\\</span><span class="s2">|ftp_user"</span>
+    </code></pre></figure>
+
+<p><br /></p>
+<hr />
+
+<p><br /></p>
+
+<h2 id="encrypting-notification-emails">Encrypting Notification emails</h2>
+
+<p><a href="https://github.com/wdzajicek/kcc-dev-docs#contents" style="float: right; position: relative; top: -3rem;">Contents</a></p>
+
+<h4 id="default-notification-email-example-in-travisyml">Default notification email example in .travis.yml.</h4>
+
+<p>This is how standard email notifications are set in .travis.yml without encryption:</p>
+
+<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml">    <span class="na">notifications</span><span class="pi">:</span>
+    <span class="na">email</span><span class="pi">:</span>
+      <span class="na">recipients</span><span class="pi">:</span>
+        <span class="pi">-</span> <span class="s">&lt;recipient-1&gt;@gmail.com</span>
+        <span class="pi">-</span> <span class="s">&lt;recipient-2&gt;@gmail.com</span>
+    </code></pre></figure>
+
+<h4 id="to-encrypt-an-email">To encrypt an email.</h4>
+
+<p>You must be in a local git repository that travis-ci.org has access to.</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">    <span class="nv">$ </span>travis encrypt <span class="s2">"&lt;recipient-1&gt;@gmail.com"</span>
+    </code></pre></figure>
+
+<p>Travis will return something like this:</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">    Please add the following to your .travis.yml file:
+
+      secure: <span class="s2">"XDD3KrR1M5Xmg+wlea4y1o14uhIhV78yAUA96SaQT4KKBRXqixQbo+Mme4ghIRlWyuZ35BReL6h/MO2Gr3xJ1TEsmo/7d+aP+OazwJ4weGX7YEQYuE7RGKQt4LIENQVhbJmUspzoZl/bocas+2PaiS8LT4cKJ58l35kFW4fIONPir4M/4xUqJX5kxvUqww7K+ijipJYAcO2ySeFeMbPL5sMxezBaXNg1sG44s/4RmHJ9tpLlnLJc1X1n0OdxrNPI2KpEQWIyTdve7vtUZb7FJ0UefL1ll9C4fojhIp8Fb3IzS5W3hLiBTys56OvhEcgp0SejCrTD9guxrwJxrZPy5i2T4Ahjg2H7ej7QsvBqh3kIfxKzKFLVvp9jKfiE0zI+lTHWhKcGXHRZTP5qLtAgEaVyKiEVd1wgwrbnv+JPLRT7Gr4CIb9BtTZjPyqAErC1uVcvapvzR19EoIAC+/Z5cyQlkZkXeLx+5c1675WoHae92MzE8xr2lf5t9b9CVk1Hdd47qaoRz172ikddcWOO242v6orxh0QT0ar65L9DqMQ+7IZP+95wn/fd97Et7zMLpkVrzaj8kSUDAi2QvhhSunBCwToe8czAUwZQ160BTicCIZ8LZpjeqZXTvEBGdqgT3Df7dNrsbODY/XiVLmpIHRaUPlcJWiwIjD2WCuGqMAg="</span>
+    </code></pre></figure>
+
+<h4 id="copy-and-paste-into-travisyml">Copy and paste into .travis.yml</h4>
+
+<p>Replace <code class="highlighter-rouge">- &lt;recipient-1&gt;@gmail.com</code> with <code class="highlighter-rouge">- secure: &lt;long encrypted string&gt;</code>:</p>
+
+<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml">    <span class="na">notifications</span><span class="pi">:</span>
+    <span class="na">email</span><span class="pi">:</span>
+      <span class="na">recipients</span><span class="pi">:</span>
+        <span class="pi">-</span> <span class="na">secure</span><span class="pi">:</span> <span class="s2">"</span><span class="s">XDD3KrR1M5Xmg+wlea4y1o14uhIhV78yAUA96SaQT4KKBRXqixQbo+Mme4ghIRlWyuZ35BReL6h/MO2Gr3xJ1TEsmo/7d+aP+OazwJ4weGX7YEQYuE7RGKQt4LIENQVhbJmUspzoZl/bocas+2PaiS8LT4cKJ58l35kFW4fIONPir4M/4xUqJX5kxvUqww7K+ijipJYAcO2ySeFeMbPL5sMxezBaXNg1sG44s/4RmHJ9tpLlnLJc1X1n0OdxrNPI2KpEQWIyTdve7vtUZb7FJ0UefL1ll9C4fojhIp8Fb3IzS5W3hLiBTys56OvhEcgp0SejCrTD9guxrwJxrZPy5i2T4Ahjg2H7ej7QsvBqh3kIfxKzKFLVvp9jKfiE0zI+lTHWhKcGXHRZTP5qLtAgEaVyKiEVd1wgwrbnv+JPLRT7Gr4CIb9BtTZjPyqAErC1uVcvapvzR19EoIAC+/Z5cyQlkZkXeLx+5c1675WoHae92MzE8xr2lf5t9b9CVk1Hdd47qaoRz172ikddcWOO242v6orxh0QT0ar65L9DqMQ+7IZP+95wn/fd97Et7zMLpkVrzaj8kSUDAi2QvhhSunBCwToe8czAUwZQ160BTicCIZ8LZpjeqZXTvEBGdqgT3Df7dNrsbODY/XiVLmpIHRaUPlcJWiwIjD2WCuGqMAg="</span>
+        <span class="pi">-</span> <span class="s">&lt;recipient-2&gt;@gmail.com</span>
+    </code></pre></figure>
+
+<h5 id="travis-can-now-decrypt-your-email-and-send-you-notifications-without-making-your-email-publicly-available">Travis can now decrypt your email and send you notifications without making your email publicly available.</h5>
+
+<p><br /></p>
+<hr />
+
+<p><br /></p>
+
+<h2 id="encrypting-and-calling-environment-variables">Encrypting and Calling Environment Variables</h2>
+
+<p><a href="https://github.com/wdzajicek/kcc-dev-docs#contents" style="float: right; position: relative; top: -3rem;">Contents</a></p>
+
+<p>to encrypt travis variables use the travis gem and login using Github credentials. You must be in a local git repository that travis-ci.org has access to.</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">    <span class="nv">$ </span>gem <span class="nb">install </span>travis
+    <span class="nv">$ </span>travis login            // this will prompt <span class="k">for </span>Github user/password
+    </code></pre></figure>
+
+<h5 id="encrypting-environment-variables-and-writing-to-travisyml-at-the-same-time">Encrypting Environment Variables and writing to .travis.yml at the same time:</h5>
+
+<p>If I wanted to put an FTP username and password in my .travis.yml as an encrypted environment variable. The <code class="highlighter-rouge">--add</code> flag writes the encrypted string to your .travis.yml file:</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">    <span class="nv">$ </span>travis encrypt <span class="nv">FTP_USER</span><span class="o">=</span><span class="s2">"&lt;example user&gt;"</span> <span class="nt">--add</span>
+    <span class="nv">$ </span>travis encrypt <span class="nv">FTP_PASSWORD</span><span class="o">=</span><span class="s2">"&lt;example password&gt;"</span> <span class="nt">--add</span>
+    </code></pre></figure>
+
+<p>Travis now has access to those encrypted variables. For example you could call the FTP user and password in your deploy script use the dollar-sign followed by the variables name (e.g. <code class="highlighter-rouge">$FTP_USER</code>)</p>
+
+<p>Example in a deploy.sh file used by travis:</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">    <span class="nv">$ </span>gulp deploy <span class="nt">--user</span> <span class="nv">$FTP_USER</span> <span class="nt">--password</span> <span class="nv">$FTP_PASSWORD</span>
+    </code></pre></figure>
+
+<p><br /></p>
+<hr />
+
+<p><br /></p>
+
+<p><span style="float: right;"><a href="https://github.com/wdzajicek/kcc-dev-docs#contents">Contents</a></span></p>
+
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer footer__margin">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 footer__mobile--margin-bottom">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <a href="http://news.kcc.edu" class="footer-link"><h5 class="footer-heading">news.kcc.edu</h5></a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="text-center">
+              <span>
+                <a href="http://www.facebook.com/KankakeeCommunityCollege/" class="footer-social-links" target="_blank" rel="noopener">
+                  <img src="assets/img/facebook-f_white.svg" class="footer-icons" alt="Facebook icon, link to the KCC Facebook page">
+                </a>
+              </span>
+              <span>
+                <a href="http://twitter.com/KCCedu" class="footer-social-links" target="_blank" rel="noopener">
+                  <img src="assets/img/twitter-white.svg" class="footer-icons" alt="Twitter icon, link to KCC Twitter page">
+                </a>
+              </span>
+              <span>
+                <a href="http://www.instagram.com/kccedu/" class="footer-social-links" target="_blank" rel="noopener">
+                  <img src="assets/img/instagram-white.svg" class="footer-icons" alt="Instagram icon, link to KCC Instagram page">
+                </a>
+              </span>
+              <span>
+                <a href="http://www.youtube.com/user/KankakeeCommCollege" class="footer-social-links" target="_blank" rel="noopener">
+                  <img src="assets/img/youtube-white.svg" class="footer-icons" alt="YouTube icon, link to KCC YouTube page">
+                </a>
+              </span>
+              <span>
+                <a href="http://www.pinterest.com/kccedu/" class="footer-social-links" target="_blank" rel="noopener">
+                  <img src="assets/img/pinterest-p_white.svg" class="footer-icons" alt="Pinterest icon, link to KCC Pinterest page">
+                </a>
+              </span>
+              <span>
+                <a href="http://www.linkedin.com/company/kankakee-community-college" class="footer-social-links" target="_blank" rel="noopener">
+                  <img src="assets/img/linkedin-white.svg" class="footer-icons" alt="LinkedIn icon, link to KCC LinkedIn page">
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <a href="http://www.kcc.edu" target="_blank" rel="noopener"><img src="assets/img/kcc-text-logo.svg" alt="KCC Text Logo link to main website" class="img-fluid mx-auto"></a>
+        <p>100 College Drive Kankakee, IL 60901 <br>
+        <a class="links__darker-link" href="tel:18158028100">815-802-8100</a> <br>
+        © 2018 Kankakee Community College</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <!-- CDN links to Bootstrap 4 beta dependancies -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+<!--  Link to Slick.js javascript (must occur after jquery)  -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+
+  <!-- custom compiled and minified javascript -->
+<script src="assets/js/all.min.js"></script>
+
+<!-- Close body -->
+</body>
+</html>
+

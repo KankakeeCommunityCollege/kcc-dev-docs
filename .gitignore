@@ -1,6 +1,3 @@
-### Ignore the Gemfile to keep it out of cloudcannon ###
-Gemfile
-
 ### General Apple things to ignore ###
 .DS_Store
 .AppleDouble
@@ -46,3 +43,6 @@ adobe/*
 
 # Yarn error log
 yarn-error.log
+
+### Ignore the Gemfile to keep it out of cloudcannon ###
+Gemfile

@@ -44,5 +44,5 @@ adobe/*
 # Yarn error log
 yarn-error.log
 
-### Ignore the Gemfile to keep it out of cloudcannon ###
+# Ignore the Gemfile to keep it out of cloudcannon
 Gemfile

@@ -19,59 +19,59 @@ Documentation for the Jekyll/Gulp template used to build KCC's new websites.  Vi
 
 ## Contents:
 
-1. [Requirements](https://github.com/wdzajicek/kcc-dev-docs#requirements)
-  - [Mac](https://github.com/wdzajicek/kcc-dev-docs#mac):
-    - [RVM](https://github.com/wdzajicek/kcc-dev-docs#1-rvm-using-ruby-250----httpsrvmiorvminstall):
-      - [Installation](https://github.com/wdzajicek/kcc-dev-docs#1-rvm-using-ruby-250----httpsrvmiorvminstall)
-      - [Install ruby-2.5.0](https://github.com/wdzajicek/kcc-dev-docs#1-rvm-using-ruby-250----httpsrvmiorvminstall)
-      - [Set ruby-2.5.0 as default](https://github.com/wdzajicek/kcc-dev-docs#1-rvm-using-ruby-250----httpsrvmiorvminstall)
-    - [NVM](https://github.com/wdzajicek/kcc-dev-docs#2-nvm-using-node-version-961---httpsgithubcomcreationixnvm):
-      - [Installation](https://github.com/wdzajicek/kcc-dev-docs#2-nvm-using-node-version-961---httpsgithubcomcreationixnvm)
-      - [Install Node Version 9.6.1](https://github.com/wdzajicek/kcc-dev-docs#2-nvm-using-node-version-961---httpsgithubcomcreationixnvm)
-    - [NPM 6.1.0](https://github.com/wdzajicek/kcc-dev-docs#3-npm-version-610)
-    - [Jekyll](https://github.com/wdzajicek/kcc-dev-docs#4-jekyll-and-bundler---httpsjekyllrbcomdocsinstallation)
-    - [Gulp](https://github.com/wdzajicek/kcc-dev-docs#6-gulp---httpsgulpjscom)
-  - [Windows PC](https://github.com/wdzajicek/kcc-dev-docs#windows-pc):
-    - [Enable "Windows Subsystem for Linux"](https://github.com/wdzajicek/kcc-dev-docs#1-install-the-windows-subsystem-for-linux---run-in-powershell-as-administrator)
-    - [Install Ubuntu in the Microsoft Store](https://github.com/wdzajicek/kcc-dev-docs#2-install-ubuntu-in-the-microsoft-store)
-    - [Git SCM](https://github.com/wdzajicek/kcc-dev-docs#3-git-scm---httpsgit-scmcom)
-    - [RVM](https://github.com/wdzajicek/kcc-dev-docs#4-rvm-using-ruby-250----httpsrvmiorvminstall):
-      - [Installation](https://github.com/wdzajicek/kcc-dev-docs#4-rvm-using-ruby-250----httpsrvmiorvminstall)
-      - [Install ruby-2.5.0](https://github.com/wdzajicek/kcc-dev-docs#4-rvm-using-ruby-250----httpsrvmiorvminstall)
-      - [Set ruby-2.5.0 as default](https://github.com/wdzajicek/kcc-dev-docs#4-rvm-using-ruby-250----httpsrvmiorvminstall)
-    - [NVM](https://github.com/wdzajicek/kcc-dev-docs#5-nvm-using-node-version-961---httpsgithubcomcreationixnvm):
-      - [Installation](https://github.com/wdzajicek/kcc-dev-docs#5-nvm-using-node-version-961---httpsgithubcomcreationixnvm)
-      - [Install Node Version 9.6.1](https://github.com/wdzajicek/kcc-dev-docs#5-nvm-using-node-version-961---httpsgithubcomcreationixnvm)
-    - [NPM 6.1.0](https://github.com/wdzajicek/kcc-dev-docs#6-npm-version-610)
-    - [Jekyll](https://github.com/wdzajicek/kcc-dev-docs#7-jekyll-and-bundler---httpsjekyllrbcomdocsinstallation)
-    - [Travis-CLI](https://github.com/wdzajicek/kcc-dev-docs#8-travis-cli---httpsdocstravis-cicomuserencryption-keysstqstp0)
-    - [Gulp](https://github.com/wdzajicek/kcc-dev-docs#9-gulp---httpsgulpjscom)
-2. [Local Installation](https://github.com/wdzajicek/kcc-dev-docs#local-installation)
-  - [install.sh](https://github.com/wdzajicek/kcc-dev-docs#local-installation)
-    - [Gemfile](https://github.com/wdzajicek/kcc-dev-docs#local-installation)
-    - [Bundle install](https://github.com/wdzajicek/kcc-dev-docs#local-installation)
-    - [npm install](https://github.com/wdzajicek/kcc-dev-docs#local-installation)
-3. [Development](https://github.com/wdzajicek/kcc-dev-docs#development)
-    - [The build](https://github.com/wdzajicek/kcc-dev-docs#development)
-    - [Browsersync](https://github.com/wdzajicek/kcc-dev-docs#development)
-    - [watch](https://github.com/wdzajicek/kcc-dev-docs#watch)
-3. [Travis CI](https://github.com/wdzajicek/kcc-dev-docs#travis-ci)
-  - [Travis Configuration File](https://github.com/wdzajicek/kcc-dev-docs#travis-configuration-file-travisyml):
-    - [before_install](https://github.com/wdzajicek/kcc-dev-docs#before_install)
-    - [install](https://github.com/wdzajicek/kcc-dev-docs#install)
-    - [Branches](https://github.com/wdzajicek/kcc-dev-docs#branches)
-    - [Notifications](https://github.com/wdzajicek/kcc-dev-docs#notification-settings-with-encrypted-emails)
-    - [before_script](https://github.com/wdzajicek/kcc-dev-docs#before_script)
-    - [script](https://github.com/wdzajicek/kcc-dev-docs#script)
-    - [after_success](https://github.com/wdzajicek/kcc-dev-docs#after_succes)
-    - [Global Environment Variables](https://github.com/wdzajicek/kcc-dev-docs#global-environment-variables)
-  - [Encrypting Using Travis CLI](https://github.com/wdzajicek/kcc-dev-docs#encrypting-using-travis-cli)
-  - [Encrypting Notification emails](https://github.com/wdzajicek/kcc-dev-docs#encrypting-notification-emails)
-  - [Encrypting and Calling Environment Variables](https://github.com/wdzajicek/kcc-dev-docs#encrypting-and-calling-environment-variables)
+1. [Requirements](https://github.com/KankakeeCommunityCollege/kcc-dev-docs#requirements)
+  - [Mac](https://github.com/KankakeeCommunityCollege/kcc-dev-docs#mac):
+    - [RVM](https://github.com/KankakeeCommunityCollege/kcc-dev-docs#1-rvm-using-ruby-250----httpsrvmiorvminstall):
+      - [Installation](https://github.com/KankakeeCommunityCollege/kcc-dev-docs#1-rvm-using-ruby-250----httpsrvmiorvminstall)
+      - [Install ruby-2.5.0](https://github.com/KankakeeCommunityCollege/kcc-dev-docs#1-rvm-using-ruby-250----httpsrvmiorvminstall)
+      - [Set ruby-2.5.0 as default](https://github.com/KankakeeCommunityCollege/kcc-dev-docs#1-rvm-using-ruby-250----httpsrvmiorvminstall)
+    - [NVM](https://github.com/KankakeeCommunityCollege/kcc-dev-docs#2-nvm-using-node-version-961---httpsgithubcomcreationixnvm):
+      - [Installation](https://github.com/KankakeeCommunityCollege/kcc-dev-docs#2-nvm-using-node-version-961---httpsgithubcomcreationixnvm)
+      - [Install Node Version 9.6.1](https://github.com/KankakeeCommunityCollege/kcc-dev-docs#2-nvm-using-node-version-961---httpsgithubcomcreationixnvm)
+    - [NPM 6.1.0](https://github.com/KankakeeCommunityCollege/kcc-dev-docs#3-npm-version-610)
+    - [Jekyll](https://github.com/KankakeeCommunityCollege/kcc-dev-docs#4-jekyll-and-bundler---httpsjekyllrbcomdocsinstallation)
+    - [Gulp](https://github.com/KankakeeCommunityCollege/kcc-dev-docs#6-gulp---httpsgulpjscom)
+  - [Windows PC](https://github.com/KankakeeCommunityCollege/kcc-dev-docs#windows-pc):
+    - [Enable "Windows Subsystem for Linux"](https://github.com/KankakeeCommunityCollege/kcc-dev-docs#1-install-the-windows-subsystem-for-linux---run-in-powershell-as-administrator)
+    - [Install Ubuntu in the Microsoft Store](https://github.com/KankakeeCommunityCollege/kcc-dev-docs#2-install-ubuntu-in-the-microsoft-store)
+    - [Git SCM](https://github.com/KankakeeCommunityCollege/kcc-dev-docs#3-git-scm---httpsgit-scmcom)
+    - [RVM](https://github.com/KankakeeCommunityCollege/kcc-dev-docs#4-rvm-using-ruby-250----httpsrvmiorvminstall):
+      - [Installation](https://github.com/KankakeeCommunityCollege/kcc-dev-docs#4-rvm-using-ruby-250----httpsrvmiorvminstall)
+      - [Install ruby-2.5.0](https://github.com/KankakeeCommunityCollege/kcc-dev-docs#4-rvm-using-ruby-250----httpsrvmiorvminstall)
+      - [Set ruby-2.5.0 as default](https://github.com/KankakeeCommunityCollege/kcc-dev-docs#4-rvm-using-ruby-250----httpsrvmiorvminstall)
+    - [NVM](https://github.com/KankakeeCommunityCollege/kcc-dev-docs#5-nvm-using-node-version-961---httpsgithubcomcreationixnvm):
+      - [Installation](https://github.com/KankakeeCommunityCollege/kcc-dev-docs#5-nvm-using-node-version-961---httpsgithubcomcreationixnvm)
+      - [Install Node Version 9.6.1](https://github.com/KankakeeCommunityCollege/kcc-dev-docs#5-nvm-using-node-version-961---httpsgithubcomcreationixnvm)
+    - [NPM 6.1.0](https://github.com/KankakeeCommunityCollege/kcc-dev-docs#6-npm-version-610)
+    - [Jekyll](https://github.com/KankakeeCommunityCollege/kcc-dev-docs#7-jekyll-and-bundler---httpsjekyllrbcomdocsinstallation)
+    - [Travis-CLI](https://github.com/KankakeeCommunityCollege/kcc-dev-docs#8-travis-cli---httpsdocstravis-cicomuserencryption-keysstqstp0)
+    - [Gulp](https://github.com/KankakeeCommunityCollege/kcc-dev-docs#9-gulp---httpsgulpjscom)
+2. [Local Installation](https://github.com/KankakeeCommunityCollege/kcc-dev-docs#local-installation)
+  - [install.sh](https://github.com/KankakeeCommunityCollege/kcc-dev-docs#local-installation)
+    - [Gemfile](https://github.com/KankakeeCommunityCollege/kcc-dev-docs#local-installation)
+    - [Bundle install](https://github.com/KankakeeCommunityCollege/kcc-dev-docs#local-installation)
+    - [npm install](https://github.com/KankakeeCommunityCollege/kcc-dev-docs#local-installation)
+3. [Development](https://github.com/KankakeeCommunityCollege/kcc-dev-docs#development)
+    - [The build](https://github.com/KankakeeCommunityCollege/kcc-dev-docs#development)
+    - [Browsersync](https://github.com/KankakeeCommunityCollege/kcc-dev-docs#development)
+    - [watch](https://github.com/KankakeeCommunityCollege/kcc-dev-docs#watch)
+3. [Travis CI](https://github.com/KankakeeCommunityCollege/kcc-dev-docs#travis-ci)
+  - [Travis Configuration File](https://github.com/KankakeeCommunityCollege/kcc-dev-docs#travis-configuration-file-travisyml):
+    - [before_install](https://github.com/KankakeeCommunityCollege/kcc-dev-docs#before_install)
+    - [install](https://github.com/KankakeeCommunityCollege/kcc-dev-docs#install)
+    - [Branches](https://github.com/KankakeeCommunityCollege/kcc-dev-docs#branches)
+    - [Notifications](https://github.com/KankakeeCommunityCollege/kcc-dev-docs#notification-settings-with-encrypted-emails)
+    - [before_script](https://github.com/KankakeeCommunityCollege/kcc-dev-docs#before_script)
+    - [script](https://github.com/KankakeeCommunityCollege/kcc-dev-docs#script)
+    - [after_success](https://github.com/KankakeeCommunityCollege/kcc-dev-docs#after_succes)
+    - [Global Environment Variables](https://github.com/KankakeeCommunityCollege/kcc-dev-docs#global-environment-variables)
+  - [Encrypting Using Travis CLI](https://github.com/KankakeeCommunityCollege/kcc-dev-docs#encrypting-using-travis-cli)
+  - [Encrypting Notification emails](https://github.com/KankakeeCommunityCollege/kcc-dev-docs#encrypting-notification-emails)
+  - [Encrypting and Calling Environment Variables](https://github.com/KankakeeCommunityCollege/kcc-dev-docs#encrypting-and-calling-environment-variables)
 
 ## Requirements
 
-<span style="float: right; position: relative; top: -4rem;"><a href="https://github.com/wdzajicek/kcc-dev-docs#contents">Contents</a></span>
+<span style="float: right; position: relative; top: -4rem;"><a href="https://github.com/KankakeeCommunityCollege/kcc-dev-docs#contents">Contents</a></span>
 
 Prerequisites to run site builds on a local machine.
 
@@ -142,7 +142,7 @@ Install in the following order:
 
 ### Windows PC
 
-<span style="float: right; position: relative; top: -4rem;"><a href="https://github.com/wdzajicek/kcc-dev-docs#contents">Contents</a></span>
+<span style="float: right; position: relative; top: -4rem;"><a href="https://github.com/KankakeeCommunityCollege/kcc-dev-docs#contents">Contents</a></span>
 
 Prerequisites: Windows 10 PC running newest Windows Build Version<br>
 Install in the following order:
@@ -233,7 +233,7 @@ Install in the following order:
 
 ## Local Installation
 
-<a href="https://github.com/wdzajicek/kcc-dev-docs#contents" style="float: right; position: relative; top: -3rem;">Contents</a>
+<a href="https://github.com/KankakeeCommunityCollege/kcc-dev-docs#contents" style="float: right; position: relative; top: -3rem;">Contents</a>
 
 To install the project on your local machine:
 
@@ -268,7 +268,7 @@ To install the project on your local machine:
 
 ## Development
 
-<a href="https://github.com/wdzajicek/kcc-dev-docs#contents" style="float: right; position: relative; top: -3rem;">Contents</a>
+<a href="https://github.com/KankakeeCommunityCollege/kcc-dev-docs#contents" style="float: right; position: relative; top: -3rem;">Contents</a>
 
 For development of sites run the default gulp task:
 
@@ -306,7 +306,7 @@ Watch the project files for changes to be injected into the browser via Browsers
 
 ## Production
 
-<a href="https://github.com/wdzajicek/kcc-dev-docs#contents" style="float: right; position: relative; top: -3rem;">Contents</a>
+<a href="https://github.com/KankakeeCommunityCollege/kcc-dev-docs#contents" style="float: right; position: relative; top: -3rem;">Contents</a>
 
 > Production build minifies CSS and JavaScript and compresses image files.
 >
@@ -328,7 +328,7 @@ See the comments within gulpfile.js and gulpconfig.yml for detailed explanation 
 
 ## Travis CI
 
-<a href="https://github.com/wdzajicek/kcc-dev-docs#contents" style="float: right; position: relative; top: -3rem;">Contents</a>
+<a href="https://github.com/KankakeeCommunityCollege/kcc-dev-docs#contents" style="float: right; position: relative; top: -3rem;">Contents</a>
 
 ### Travis Configuration File (.travis.yml)
 
@@ -381,7 +381,7 @@ With CloudCannon's publishing workflow, the publish branch is the only one  that
 
 #### Notification settings with encrypted emails
 
-##### See [Encrypting Notification Emails](https://github.com/wdzajicek/kcc-dev-docs#encrypting-and-calling-environment-variables)
+##### See [Encrypting Notification Emails](https://github.com/KankakeeCommunityCollege/kcc-dev-docs#encrypting-and-calling-environment-variables)
 
     {% highlight YAML %}
     notifications:
@@ -432,7 +432,7 @@ deploy.sh also issues a 15 second delay via `$ sleep 15` between the cleanFTP an
 
 #### Global Environment Variables
 
-##### See [Encrypting and Calling Environment Variables](https://github.com/wdzajicek/kcc-dev-docs#encrypting-and-calling-environment-variables).
+##### See [Encrypting and Calling Environment Variables](https://github.com/KankakeeCommunityCollege/kcc-dev-docs#encrypting-and-calling-environment-variables).
 
     {% highlight YAML %}
     env:
@@ -448,7 +448,7 @@ deploy.sh also issues a 15 second delay via `$ sleep 15` between the cleanFTP an
 
 ## Encrypting Using Travis CLI
 
-<a href="https://github.com/wdzajicek/kcc-dev-docs#contents" style="float: right; position: relative; top: -3rem;">Contents</a>
+<a href="https://github.com/KankakeeCommunityCollege/kcc-dev-docs#contents" style="float: right; position: relative; top: -3rem;">Contents</a>
 
 to encrypt travis variables use the travis gem and login using Github credentials (travis logins will timeout):
 
@@ -485,7 +485,7 @@ For example, to encrypt `www.url.com|ftp_user` you would have to escape the pipe
 
 ## Encrypting Notification emails
 
-<a href="https://github.com/wdzajicek/kcc-dev-docs#contents" style="float: right; position: relative; top: -3rem;">Contents</a>
+<a href="https://github.com/KankakeeCommunityCollege/kcc-dev-docs#contents" style="float: right; position: relative; top: -3rem;">Contents</a>
 
 #### Default notification email example in .travis.yml.
 
@@ -535,7 +535,7 @@ Replace `- <recipient-1>@gmail.com` with `- secure: <long encrypted string>`:
 
 ## Encrypting and Calling Environment Variables
 
-<a href="https://github.com/wdzajicek/kcc-dev-docs#contents" style="float: right; position: relative; top: -3rem;">Contents</a>
+<a href="https://github.com/KankakeeCommunityCollege/kcc-dev-docs#contents" style="float: right; position: relative; top: -3rem;">Contents</a>
 
 to encrypt travis variables use the travis gem and login using Github credentials. You must be in a local git repository that travis-ci.org has access to.
 
@@ -565,4 +565,4 @@ Example in a deploy.sh file used by travis:
 <hr>
 <br>
 
-<span style="float: right;"><a href="https://github.com/wdzajicek/kcc-dev-docs#contents">Contents</a></span>
+<span style="float: right;"><a href="https://github.com/KankakeeCommunityCollege/kcc-dev-docs#contents">Contents</a></span>

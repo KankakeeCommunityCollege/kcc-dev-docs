@@ -1,6 +1,8 @@
 # KCC Web Development - Site Template Documentation
 #### Jekyll + Gulp + Sass + Browsersync + Travis CI + . . .
 
+## [View This README](https://kankakeecommunitycollege.github.io/kcc-dev-docs/) as a styled page.
+
 - Jekyll static site generator
 - Gulp.js with Modular gulp-tasks
 - YAML Gulp config file
